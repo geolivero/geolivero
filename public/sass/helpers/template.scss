@@ -1,0 +1,23 @@
+
+body.webApp {
+    background: url(../../images/wood_tiler.jpg) left top; padding: 0!important;
+    @include animate(movingBackground, 50s);
+
+
+    footer {
+        position: fixed; bottom: 0; left: 0;
+        height: 60px; background: $white; width: 100%;
+
+
+        nav {
+            position: absolute; right: 0; height: 60px; text-align: right;
+            li {
+                display: inline-block;
+                a {
+                    display: inline-block; height: 60px; line-height: 60px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

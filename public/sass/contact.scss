@@ -1,0 +1,117 @@
+div.innerContent.contact.center {
+    position: absolute; overflow: hidden; left: 0; top: 0; bottom: 0;
+    @include transition(All 1s ease-in-out);
+    width: 0; @include border-radius(100%); min-height: 100%;
+
+    div.inner {
+        width: $innerWidth; padding:40px 0 0 500px; @include box-sizing(border-box);
+        margin: 0 auto; position: relative; top: 40px; bottom: 0;
+        min-height: 100%; 
+    }
+    
+    &:before {
+        background: $black; content: ''; position: absolute;  left: -50%;
+        width: 150%; bottom: 0; top: 450px;
+    }
+
+    h2.screamer {
+        @include transform(translateY(-250px));
+        @include transition(All 1s ease-in-out); 
+        strong {
+            font-size: 100%; top: -45px; 
+        }
+    }
+
+    p {
+        font-size: 120%; text-align: center; 
+    }
+
+    ul {
+        list-style-type: none; padding: 0; margin: 0; padding-top: 30px;
+        position: relative; z-index: 30;
+        li { 
+            float: left; padding-left: none; margin-right: 10px;
+            
+            a {
+                display: inline-block; @include transition(All, 0.3s);
+                @include border-radius(100%); 
+                background: $black; border: solid 2px $white; text-align: center;
+                position: relative; width: 90px; height: 90px;
+                &:before {
+                    content: 'C'; position: absolute; width: inherit; height: inherit;
+                    display: block; text-align: center; line-height: 90px;
+                    color: $white; @include icon; font-size: 25px;
+                }
+                span {
+                    position: absolute; top: -40px; right: 0; display: none;
+                    height: 30px; background: $white; color: $black; text-decoration: none;
+                    padding: 0 10px; @include border-radius(10px);
+                    height: 30px; line-height: 30px; width: 220px; text-align: center;
+                    &:before {
+                        content: ''; position: absolute; top: 30px; right: 30px;
+                        border-top: solid 10px $white; 
+                        border-left: solid 10px transparent; 
+                        border-right: solid 10px transparent; 
+                    }
+                }
+                &:hover {
+                    background: $white;
+                    color: $black;
+                    &:before {
+                        color: $black;
+                    }
+                    span {
+                        display: block;
+                    }
+                } 
+            }
+            &.email {
+                a {
+                    &:before {
+                        content: '+';
+                    }
+                }
+            }
+            &.linkedin {
+                a {
+                    &:before {
+                        content: 'N';
+                    }
+                }
+            }
+
+        }
+        
+
+    }
+
+    div.phone {
+        position: absolute; left: 0; top: 40px;
+        @include phone; @include transform(translateX(-200px));
+        @include transition(All 1s ease-out); 
+        &:before {
+            content: 'H'; @include icon; color: $white;
+            font-size: 140px; position: absolute; right: 0px;
+            top: -30px; @include transition(all 0.5s);
+            @include transform(scale(0), rotate(-45deg));
+        }
+        &.show {
+            &:before {
+                @include transform(scale(1), rotate(0deg));   
+            }
+        }
+    }
+
+    &.show {
+        width: 100%; @include border-radius(0); 
+        div.inner {
+            width: $innerWidth; 
+        }
+        h2.screamer {
+            @include transform(translateY(0));
+        }
+        div.phone {
+            @include transform(translateX(0px));
+        }
+    }
+}

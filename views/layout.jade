@@ -1,0 +1,24 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/main.css')
+  body.webApp
+
+    div#mainApp
+        block content
+
+    footer
+        nav
+            ul
+                li
+                    a(href="/skills") my skills
+                li
+                    a(href="/portfolio") my projects
+                li
+                    a(href="/contact") contact
+
+        a.logo(href="/") L
+        a.sound(href="#sound") Sound of
+
+    script(type="text/javascript", data-main="/js/main", src="/bower_components/requirejs/require.js")

@@ -1,0 +1,29 @@
+extends admin-layout
+
+block content
+    
+    div.appWrapper
+        div.shiftContentRight
+                a.logout(href="/admin/logout") logout
+        header
+            h1= title        
+        div
+            a.btn(href="/admin/projects/create") create a project
+        table
+            thead
+                tr
+                    th
+                    th title
+                    th type
+                    th order
+                    th operations
+            tbody
+                each project in projects
+                    tr
+                        td: img(src="/assets/projects/thumbs/#{project.pic_front.name}")
+                        td= project.title
+                        td= project.type
+                        td= project.order
+                        td
+                            a(href="/admin/projects/#{project._id}", class="edit") edit
+                            a(href="/admin/projects/#{project._id}/delete", class="delete delBtn") delete

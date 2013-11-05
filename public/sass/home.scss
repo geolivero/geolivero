@@ -1,0 +1,195 @@
+$slideHeight: 500px;
+
+div.center.slide {
+    position: absolute; left: 50%; margin-left: -($innerWidth / 2);
+    top: 0;
+}
+div.firstSlide, div.secondSlide, div.thirdSlide {
+    width: $innerWidth; z-index: 2;
+
+    div.me {
+        @include me_2; position: absolute; bottom: 0; left: 0px; z-index: 1;
+        @include transform(rotateX(120deg));
+        @include transition (All, 0.5s ease);
+        @include transform-style(preserve-3d);
+        @include transform-origin(0 bottom 0);
+    }
+
+    &.show {
+        z-index: 10;
+        div.me {
+            @include transform(rotateX(0deg));
+        }  
+        div.leftBlock, div.rightBlock {
+            width: 300px; @include border-radius(0);
+            height: auto;
+        }
+        div.rightBlock {
+            width: 400px;
+        }
+    }
+    div.leftBlock, div.rightBlock {
+        @include transition (All, 1s ease); width: 0; 
+        overflow: hidden; @include border-radius(100%); padding-top: 10px;
+    }
+}
+
+div.firstSlide {
+    
+
+    position: absolute; height: $slideHeight; top: $slideHeight; 
+    @include perspective(1500px);
+
+    p {
+        text-align: center; font-size: 140%;
+    }
+    
+
+    div.leftBlock {
+        position: absolute; left: 0; top: 80px;
+        width: 300px; z-index: 2; 
+        width: 0; 
+        div.inner {
+            width: 300px;
+        }
+    }
+    div.rightBlock {
+        position: absolute; left: 600px; top: 80px;
+        width: 0; z-index: 2; 
+        div.inner {
+            width: 400px;
+        }
+        
+        div.btnWrap {
+            text-align: right; padding-right: 40px;
+        }
+    }
+
+    div.rightBlock {
+        padding-top: 40px;
+    }
+    
+   &.show {
+        div.me {
+            @include transform(rotateX(0deg));
+        }  
+        div.leftBlock, div.rightBlock {
+            width: 300px; @include border-radius(0);
+            height: auto;
+        }
+        div.rightBlock {
+            width: 400px;
+            div.inner {
+                width: 400px;
+            }
+        }
+   }
+}
+
+div.secondSlide, div.thirdSlide {
+    top: -($slideHeight) - 40; position: absolute; height: $slideHeight; overflow: visible; 
+    div.me {
+        @include me_1; position: absolute; left: 230px; bottom: -24px; z-index: 13; @include transform(rotateX(90deg));
+    }
+}
+
+div.secondSlide {
+    div.leftBlock {
+        position: absolute; left: 0; top: 20px; width: 0;
+        div.inner {
+            width: 380px;  padding-right: 40px;
+        }
+        div.skills {
+            ul {
+                background: url(../images/fonts/projects.svg) no-repeat 0 0;
+                @include background-size(100%);
+                width: 380px; height: 355px; padding: 0; margin: 0;
+                li {
+                    display: none; 
+                }
+            }
+        }
+    }
+    
+    
+
+    div.rightBlock {
+        position: absolute; left: 600px; top: 30px; z-index: 14;
+        div.inner {
+            width: 400px; padding-right: 10px;
+        }
+        p, h4 {
+            text-align: center;
+        }
+        h4 {
+            font-size: 210%;
+        }
+    }
+    div.btnWrap {
+        text-align: center;
+    }
+
+    &.show {
+        z-index: 13;
+        div.leftBlock, div.rightBlock {
+            width: 380px;
+        }
+        div.rightBlock {
+            width: 400px;
+        }
+    }
+}
+
+
+div.thirdSlide {
+    div.leftBlock {
+        position: absolute; left: 0; top: 20px; width: 0;
+        div.inner {
+            width: 650px;
+            
+            p {
+                width: 350px; font-size: 120%;
+            }
+            h4 {
+                font-size: 220%; width: 300px;
+            }
+        }
+    }
+    
+    
+
+    div.rightBlock {
+        position: absolute; left: 650px; top: 250px; z-index: 14;
+        div.inner {
+            width: 400px;
+        }
+        p, h4 {
+            text-align: center;
+        }
+        h4 {
+            font-size: 210%;
+        }
+    }
+
+    &.show {
+        z-index: 13;
+        div.leftBlock, div.rightBlock {
+            width: 650px;
+        }
+        div.rightBlock {
+            width: 400px;
+        }
+    }
+}
+
+div.tool.slides {
+    position: absolute; background: $black; padding-top: 20px; z-index: 11; 
+    left: 0; top: $slideHeight; bottom: -70px; text-align: center; width: 100%;
+    
+    a {
+        &:before {
+            content: 'B'; @include icon; position: absolute; top: 70px;
+            left: 50%; margin-left: -30px; font-size: 40px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+extends admin-layout
+
+block content
+    
+    -if(typeof message !== 'undefined'){
+
+        div.message.error.box.center 
+            p Please try again
+    -}
+  
+    form(action="/login", method="POST", class="center box")
+        h1 Login
+
+        div
+            input#email(type="text", name="username", value="", placeholder="username")
+        div
+            input#password(type="password", name="password", value="", placeholder="password")
+        div
+            button(type="submit", class="btn") login

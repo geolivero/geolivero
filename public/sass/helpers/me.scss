@@ -1,0 +1,20 @@
+@mixin me_1 {
+  background: url(../../images/me.png) -902px 0px no-repeat;
+  display: inline-block;
+  width: 521px;
+  height: 280px;
+}
+
+@mixin me_2 {
+  background: url(../../images/me.png) 0px 0px no-repeat;
+  display: inline-block;
+  width: 900px;
+  height: 352px;
+}
+
+@mixin phone {
+  background: url(../../images/me.png) 0px -354px no-repeat;
+  display: inline-block;
+  width: 487px;
+  height: 528px;
+}

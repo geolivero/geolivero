@@ -1,0 +1,59 @@
+
+body.webApp {
+    background: url(../../images/wood_tiler.jpg) left top;
+    @include animate(movingBackground, 50s); padding: 0; margin: 0;
+
+
+    footer {
+        position: fixed; bottom: 0; left: 0; z-index: 60;
+        height: 60px; background: $white; width: 100%;
+        a {
+            text-decoration: none; display: inline-block; color: $black;
+        }
+        a.logo {
+            @include icon; height: 60px; width: 80px;
+            line-height: 60px; font-size: 40px; text-align: center;
+            border-right: solid 1px $lightGray; position: relative;
+            &:after {
+                content: ''; display: block; background: $red; width: 7px; height: 7px;
+                position: absolute; right: 15px; bottom: 10px; @include border-radius(100%);
+            }
+        }
+        
+        a.sound {
+            height: 60px; line-height: 60px; padding: 0 20px;
+            font-weight: bold; text-transform: uppercase;
+        }
+        
+        a.logo, a.sound {
+            float: left;
+
+            @include transition(All 0.3s);
+             
+            &:hover {
+                background: $black; color: $white;
+            }
+        }
+
+        nav {
+            position: absolute; right: 0; height: 60px; text-align: right;
+            background: $black;
+            ul {
+                margin: 0; padding: 0;
+            }
+            li {
+                display: inline-block;
+                a {
+                    height: 60px; line-height: 60px; float: left; background: $white;
+                    text-decoration: none; border-left: solid 1px $lightGray; padding: 0 20px;
+                    text-transform: uppercase; font-weight: bold; @include transition(All 0.3s);
+                    @include transform(translateY(0px));
+                    
+                    &:hover {
+                        @include transform(translateY(10px)); background: $white;
+                    }
+                }
+            }
+        }
+    }
+}

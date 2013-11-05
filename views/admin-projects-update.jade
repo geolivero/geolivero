@@ -1,0 +1,74 @@
+extends admin-layout
+
+block content
+
+    - function isVal (data, name) {
+        -var i = 0, found = 0;
+        -while(i < data.length) {
+            -if (data[i] === name) {
+                -found += 1;
+            -}
+            -i +=1;
+        -}
+        -return found > 0 ? true : false; 
+    - }
+
+    - function showPics (pics) {
+        - var i = 0, html = '';
+        - while(i < pics.length) {
+            - html += '<img src="/assets/projects/thumbs/' + pics[i].name + '"/>';
+            - i += 1;
+        -}
+        -return html;
+    - }
+    
+    div.shiftContentRight
+        a.logout(href="/admin/logout") logout
+    header
+        h1= title
+            a.spaceLeft(href="/admin") < go back
+
+    form(action="/admin/project/update", method="POST", enctype="multipart/form-data")
+
+        input(type="hidden" name="_method" value="PUT")
+
+        input(type="hidden" name="id" value="#{project._id}")
+        div
+            input#title(type="text", name="title", value="#{project.title}", placeholder="title")
+
+        div 
+            h3 Background color
+            input#color(type="color", name="color", value="#{project.color}", placeholder="color")
+
+        div
+            h3 Type
+            input#website(type="checkbox", checked=isVal(project.type, 'website'), name="type", value="website")
+            label(for="website") website
+            input#tablet(type="checkbox", checked=isVal(project.type, 'tablet'), name="type", value="tablet")
+            label(for="tablet") tablet
+            input#mobile(type="checkbox", checked=isVal(project.type, 'mobile'), name="type", value="mobile")
+            label(for="mobile") mobile
+            input#design(type="checkbox", checked=isVal(project.type, 'design'), name="type", value="design")
+            label(for="design") design
+            input#retouching(type="checkbox", checked=isVal(project.type, 'retouching'), name="type", value="retouching")
+            label(for="retouching") retouching
+
+        div
+            h3 Project description
+            textarea(placeholder="Body content", name="body") #{project.body}
+        div
+            h3 Project front pic
+            input#pic_front(type="file", name="pic_front", placeholder="pic_front")
+            div
+                img(src="/assets/projects/thumbs/#{project.pic_front.name}")
+        div
+            h3 Project pics
+            input#pics(type="file", multiple="true", name="pics", placeholder="pics")
+            div!= showPics(project.pics)
+        div
+            input#order(type="number", name="order", value="#{project.order}", placeholder="order")
+
+        div
+            input#url(type="text", name="url", value="#{project.url}", placeholder="url")
+        div
+            button(type="submit", class="btn") update

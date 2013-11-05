@@ -1,0 +1,19 @@
+extends admin-layout
+
+block content
+
+    div.shiftContentRight
+        a.logout(href="/admin/logout") logout
+    header
+        h1= title
+            a.spaceLeft(href="/admin") < go back
+
+    form(action="/admin/project/destroy", method="POST", enctype="multipart/form-data")
+
+        input(type="hidden" name="_method" value="DELETE")
+
+        input(type="hidden" name="id" value="#{id}")
+
+        div
+            button(type="submit", class="btn") remove
+            a(href="/admin") cancel

@@ -1,0 +1,38 @@
+/*
+Syntax error: Invalid CSS after "...te Mixin Plugin": expected selector or at-rule, was "=animate($name:..."
+        on line 3 of sass/helpers/animate.scss
+
+1: //Animate Mixin Plugin
+2: 
+3: =animate($name: fadeIn, $duration: 1s, $delay: .2s, $function: ease, $mode: both)
+4:   +experimental(animation, $name $duration $delay $function $mode)
+5: 
+6: 
+7: //KeyFrame Defaults (pre-made don't edit)
+8: 
+
+Backtrace:
+sass/helpers/animate.scss:3
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/scss/parser.rb:1184:in `expected'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/scss/parser.rb:1120:in `expected'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/scss/parser.rb:40:in `parse'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/engine.rb:389:in `_to_tree'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/engine.rb:351:in `_render_with_sourcemap'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/engine.rb:282:in `render_with_sourcemap'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/plugin/compiler.rb:307:in `update_stylesheet'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/plugin/compiler.rb:182:in `block in update_stylesheets'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/plugin/compiler.rb:179:in `each'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/plugin/compiler.rb:179:in `update_stylesheets'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/plugin/compiler.rb:262:in `block in watch'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `call'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/listen-0.7.3/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `call'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `report_changes'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/listen-0.7.3/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...te Mixin Plugin\": expected selector or at-rule, was \"=animate($name:...\"\A         on line 3 of sass/helpers/animate.scss\A \A 1: //Animate Mixin Plugin\A 2: \A 3: =animate($name: fadeIn, $duration: 1s, $delay: .2s, $function: ease, $mode: both)\A 4:   +experimental(animation, $name $duration $delay $function $mode)\A 5: \A 6: \A 7: //KeyFrame Defaults (pre-made don't edit)\A 8: "; }

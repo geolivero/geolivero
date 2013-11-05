@@ -1,0 +1,91 @@
+@mixin me_1 {
+  background: url(../../images/me.png) -902px 0px no-repeat;
+  display: inline-block;
+  width: 521px;
+  height: 280px;
+}
+
+@mixin me_2 {
+  background: url(../../images/me.png) 0px 0px no-repeat;
+  display: inline-block;
+  width: 900px;
+  height: 352px;
+}
+
+@mixin phone {
+  background: url(../../images/me.png) 0px -354px no-repeat;
+  display: inline-block;
+  width: 487px;
+  height: 528px;
+}
+
+@mixin animate ($animName: default, $time: 10s, $type: infinite, $animType: linear) {
+    animation-duration: $time;
+    -webkit-animation-duration: $time;
+    -webkit-animation-name: $animName;
+    -moz-animation-name: $animName;
+    -ms-animation-name: $animName;
+    -o-animation-name: $animName;
+    animation-name: $animName;
+    -webkit-animation-iteration-count: $type;
+    -moz-animation-iteration-count: $type;
+    -ms-animation-iteration-count: $type;
+    -o-animation-iteration-count: $type;
+    animation-iteration-count: $type;
+
+    -webkit-animation-timing-function: $animType;
+    -moz-animation-timing-function: $animType;
+    -ms-animation-timing-function: $animType;
+    -o-animation-timing-function: $animType;
+    animation-timing-function: $animType;
+}
+
+@keyframes "movingBackground" {
+ from {
+    background-position: 0 0;
+ }
+ to {
+    background-position: 708px 0;
+ }
+
+}
+
+@-moz-keyframes movingBackground {
+ from {
+   background-position: 0 0;
+ }
+ to {
+   background-position: 708px 0;
+ }
+
+}
+
+@-webkit-keyframes "movingBackground" {
+ from {
+   background-position: 0 0;
+ }
+ to {
+   background-position: 708px 0;
+ }
+
+}
+
+@-ms-keyframes "movingBackground" {
+ from {
+   background-position: 0 0;
+ }
+ to {
+   background-position: 708px 0;
+ }
+
+}
+
+@-o-keyframes "movingBackground" {
+ from {
+   background-position: 0 0;
+ }
+ to {
+   background-position: 708px 0;
+ }
+
+}

@@ -1,0 +1,51 @@
+extends admin-layout
+
+block content
+    
+    div.shiftContentRight
+        a.logout(href="/admin/logout") logout
+    header
+        h1= title
+            a.spaceLeft(href="/admin") < go back
+
+    form(action="/admin/projects/create", method="POST", enctype="multipart/form-data")
+
+        div
+            input#title(type="text", name="title", value="", placeholder="title")
+
+        div 
+            h3 Background color
+            input#color(type="color", name="color", value="", placeholder="color")
+
+        div
+            h3 Type
+            input#website(type="checkbox", name="type", value="website")
+            label(for="website") website
+            input#tablet(type="checkbox", name="type", value="tablet")
+            label(for="tablet") tablet
+            input#mobile(type="checkbox", name="type", value="mobile")
+            label(for="mobile") mobile
+            input#design(type="checkbox", name="type", value="design")
+            label(for="design") design
+            input#retouching(type="checkbox", name="type", value="retouching")
+            label(for="retouching") retouching
+
+        div
+            h3 Project description
+            textarea(placeholder="Body content", name="body")
+        div
+            h3 Project front pic
+            input#pic_front(type="file", name="pic_front", placeholder="pic_front")
+
+        div
+            h3 Project pics
+            input#pics(type="file", multiple="true", name="pics", placeholder="pics")
+
+
+        div
+            input#order(type="number", name="order", value="", placeholder="order")
+
+        div
+            input#url(type="text", name="url", value="", placeholder="url")
+        div
+            button(type="submit", class="btn") create

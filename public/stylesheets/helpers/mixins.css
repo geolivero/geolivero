@@ -1,0 +1,36 @@
+@keyframes "movingBackground" {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: 708px 0; } }
+
+@-moz-keyframes movingBackground {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: 708px 0; } }
+
+@-webkit-keyframes "movingBackground" {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: 708px 0; } }
+
+@-ms-keyframes "movingBackground" {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: 708px 0; } }
+
+@-o-keyframes "movingBackground" {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: 708px 0; } }
+
+/*@ sourceMappingURL=mixins.css.map */

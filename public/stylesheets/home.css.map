@@ -1,0 +1,6 @@
+{
+"version": "3",
+"mappings": "AAAA,qBAAsB;EAClB,QAAQ,EAAE,QAAQ;EAAE,MAAM,EAAE,KAAK;EAEjC,mCAAc;IACV,QAAQ,EAAE,QAAQ",
+"sources": ["../sass/home.scss"],
+"file": "home.css"
+}

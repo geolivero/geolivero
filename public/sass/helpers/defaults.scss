@@ -1,0 +1,222 @@
+* {
+	@include sans; @include box-sizing(border-box);
+	&::selection {
+		background: $red; color: $white;
+	}
+}
+
+body {
+	font-size: 100%;
+}
+.center {
+	margin: 0 auto;
+}
+
+.box {
+	width: 650px; position: relative; padding: 20px;
+	border: solid 1px $lightGray; top: 150px;
+}
+
+form {
+
+	div {
+		padding: 0 0 10px 0;
+	}
+	label {
+		color: $gray; display: inline-block; padding-left: 5px; font-size: 95%;
+	}
+	input#color {
+		width: 50px; height: 50px;
+	}
+	input, textarea {
+		border: solid 1px $lightGray; padding: 10px;
+		background: $white; font-size: 95%; width: 100%;
+	
+		&[type=checkbox], &[type=radio] { width: auto; }
+
+		&:focus {
+			outline: 0; @include box-shadow(0 0 5px rgba($black, 0.3));
+		}
+	}
+
+	textarea {
+		height: 250px;
+	}
+
+}
+
+h1, h2, h3, h4 {
+	font-weight: 200; padding-bottom: 15px; margin: 0;
+
+}
+
+
+a {
+	color: $black;
+	&:hover {
+		color: $gray;
+	}
+}
+header {
+	h1 {
+		border-bottom: solid 1px $lightGray; margin-bottom: 20px;
+	}
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse; 
+	td, th {
+		padding: 10px; border: solid 1px $lightGray;
+	}
+	th {
+		font-weight: 200;
+	}
+	thead {
+		background: $lightGray + 20;
+	}
+}
+.spaceLeft {
+	padding-left: 10px;
+}
+.btn {
+	border: solid $red 1px; text-transform: uppercase;
+	color: $red; cursor: pointer; display: inline-block;
+	text-decoration: none;  margin-right: 10px;
+	text-align: center; padding: 0 20px;
+	height: 50px; line-height: 50px;
+	font-size: 120%; font-weight: bold; background: $white;
+	outline: 0; margin-bottom: 10px;
+
+	&:hover {
+		background: $red; color: $white;
+	}
+}
+.delete {
+	color: $red;
+}
+.delBtn {
+	display: inline-block; padding: 0 10px; border: solid 1px $red; @include border-radius(30px);
+	height: 30px; line-height: 30px; margin-left: 10px;
+}
+.shiftContentRight {
+	text-align: right;
+}
+.content {
+	padding: 20px;
+}
+.message {
+	border: solid 1px $red; margin-bottom: 20; top: 100px;
+	&.error {
+		p {
+			color: $red;
+		}
+	}
+}
+
+body.webApp {
+
+	background: $black; color: $white;
+
+	h1, h2, h3 {
+		background: none;
+		@include mission; line-height: 1.3em;
+
+		span, strong {
+			@include mission; font-size: 150%;
+			display: block; font-weight: 200; 
+		}
+		strong {
+			margin-left: 10%;
+		}
+	}
+	h4 {
+		@include mission; font-size: 180%; font-weight: 200;
+	}
+	a {
+		color: $red; @include transition(All, 0.3s); background: none;
+		&:hover {
+			text-decoration: none; background: $black;
+		}
+	}
+	h2.screamer, h1.screamer, h1.screamer span, h2.screamer span {
+		font-weight: 200; padding-bottom: 15px; margin: 0; @include box-sizing(border-box);
+		background: $white; @include geared; color: $white;
+		text-transform: uppercase; 
+		height: 84px; font-size: 340%; padding: 2px 0;
+		display: inline-block; position: relative; margin: 20px 20px 0 20px;
+
+		&:before, &:after {
+			color: $white; display: block; @include icon; width: 80px;
+			font-size: 83px; position: absolute; text-align: left; line-height: 80px;
+			text-indent: 0; text-align: left; top: 3px;
+		}
+		&:before {
+			content: '['; 
+			left: -20px; 
+		}
+		&:after {
+			content: ']'; text-align: right;
+			right: -20px;
+		}
+
+		span {
+			background: $black; font-size: 100%; padding: 0 20px;
+			z-index: 10; margin: 0; height: 80px; line-height: 90px;
+			font-weight: 200;
+			&:before, &:after {
+				color: $black;  font-size: 80px; top: 1px;
+			}
+			&:before {
+				left: -18px; 
+			}
+			&:after {
+				right: -18px;
+			}
+		}
+		strong {
+			position: absolute; right: -20px; top: -43px;
+			@include mission; font-size: 65%; z-index: 10;
+			text-transform: none; font-weight: 200;
+			
+		}
+	}
+
+	div.btnWrap {
+		padding: 5px 0;
+	}
+
+	a.btn {
+		display: inline-block; @include perspective(1500px); position: relative;
+		background: none; border: none; padding: 0;  color: $white; height: 70px;
+
+		span.wrap {
+			position: relative; display: block;
+			@include transition (All, 0.3s ease);
+			@include transform-style(preserve-3d);
+			@include transform-origin(0 0 0);
+		}
+		span.paper {
+			display: block; border: solid 1px $white; @include geared;
+			@include transform-origin(0 0 0);
+			height: 60px; line-height: 60px; padding: 0 20px; 
+			font-size: 180%; position: relative;
+			@include backface-visibility(hidden);
+
+			&.back {
+				background: $white; color: $black; color: $white; 
+				@include transform(rotateX(-85deg)); @include transition (All, 0.3s ease);
+			}
+		}
+
+		&:hover {
+			span.wrap {
+				@include transform(rotateX(90deg) translateY(-60px));
+				span.back {
+					color: $black;
+				}
+			}
+		}
+	}
+}
+
