@@ -1630,3 +1630,61 @@ div.project div.colls div.coll ul.projects li.type_550 span:after {
     text-indent: -11px;
   }
 }
+
+/* line 271, ../sass/portfolio.scss */
+div.eta_navigation {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  height: 20px;
+  width: 100%;
+  background: white;
+  height: 30px;
+  border: solid 1px #999999;
+  border-left: none;
+  border-right: none;
+}
+/* line 276, ../sass/portfolio.scss */
+div.eta_navigation ol {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  text-align: center;
+}
+/* line 279, ../sass/portfolio.scss */
+div.eta_navigation ol li {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: none;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  float: none;
+  margin: 0 2px;
+  text-indent: -9999px;
+  padding: 0;
+  border: solid 1px black;
+  cursor: pointer;
+}
+/* line 285, ../sass/portfolio.scss */
+div.eta_navigation ol li.current {
+  background: black;
+}
+
+/* line 292, ../sass/portfolio.scss */
+span.eta_nav {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  font-family: 'icomoon', sans-serif;
+  color: black;
+  font-size: 20px;
+}
+/* line 296, ../sass/portfolio.scss */
+span.eta_nav.right {
+  right: 10px;
+  left: auto;
+}

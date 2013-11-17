@@ -268,4 +268,32 @@ div.project {
     }
 }
 
+div.eta_navigation {
+    position: absolute; left: 0; bottom: 0px; height: 20px;
+    width: 100%; background: $white; height: 30px;
+    border: solid 1px $gray;
+    border-left: none;  border-right: none; 
+    ol {
+        margin: 0; padding: 0; padding-top: 5px;
+        text-align: center; 
+        li {
+            display: inline-block; height: 20px; width: 20px;
+            background: none; @include border-radius(100%);
+            float: none; margin: 0 2px; text-indent: -9999px;  padding: 0;
+            
+            border: solid 1px $black; cursor: pointer;
+            &.current{
+                background: $black;
+            }
+        }
+    }
+}
 
+span.eta_nav {
+    position: absolute; left: 10px; bottom: 5px; 
+    @include icon; color: $black; font-size: 20px;
+
+    &.right {
+        right: 10px; left: auto; 
+    }
+}

@@ -18,6 +18,7 @@ define([
         render: function () {
             var html = this.template({ model: this.model.toJSON(), imgPath: Settings.getProjectImagePath });
             this.$el.append(html);
+            this.$el.find('ul.projects').etalage();
             //console.log(html);
         }
     });

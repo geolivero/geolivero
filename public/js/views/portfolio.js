@@ -64,14 +64,12 @@ define([
         render: function() {
             var self = this;
             this.$el.html(this.template());
+
             this.collection.each(function(Model) {
-               // console.log(Model.toJSON());
                 self.$el.find('ul.lists').append(new project({
                     model: Model.toJSON()
                 }).render().el);
-                
             });
-            this.$el.find('ul.lists').etalage();
             this.showList();
             this.onReady();
             return this;
