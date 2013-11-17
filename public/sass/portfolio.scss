@@ -188,11 +188,14 @@ div.project {
                 height: 100%;
                 position: relative;
                 li {
-                    width: 100%; padding: 5% 0;                    
-                    left: 100%; height: 100%; 
+                    width: 0; padding: 5% 0;                    
+                    left: 0; height: 0; overflow: hidden;
+                    @include border-radius(100%);
+                    @include transition(all 0.5s ease);
                     text-align: center;  
-                    &:first-child {
-                        left: 0;
+                    &.show {
+                        width: 100%; height: 100%;
+                        @include border-radius(0);
                     }
                     span {
                         display: inline-block; position: relative;
@@ -217,7 +220,7 @@ div.project {
                                 left: 0;
                             }
                             &:after {
-                                color: $white; content: "T"; display: block;
+                                color: $black; content: "T"; display: block;
                                 @include icon; position: absolute;
                                 left: 0; top: 0; font-size: 500px;
                                 text-align: left; text-indent: -88px;
@@ -292,7 +295,7 @@ div.eta_navigation {
 span.eta_nav {
     position: absolute; left: 10px; bottom: 5px; 
     @include icon; color: $black; font-size: 20px;
-
+    cursor: pointer;
     &.right {
         right: 10px; left: auto; 
     }
