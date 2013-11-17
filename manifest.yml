@@ -1,0 +1,19 @@
+---
+applications:
+  .:
+    name: geolivero
+    framework:
+      name: node
+      info:
+        mem: 64M
+        description: Node.js Application
+        exec: 
+    infra: eu-aws
+    url: geolivero
+    mem: 128M
+    instances: 1
+    services:
+      projects:
+        type: mongodb
+      geo:
+        type: mongodb

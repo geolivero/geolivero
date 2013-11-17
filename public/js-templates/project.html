@@ -1,0 +1,51 @@
+<div class="project" style="background: <%= model.color %>">
+    <div class="colls">
+        <div class="coll info">
+            <h2 class="screamer">
+                <span><em><%= model.title %></em></span>
+            </h2>
+            <div class="innerContent">
+                <%= model.body %>
+            </div>
+            <ul class="apps">
+                <% if (model.type.length) { %>
+                <% _.each(model.type, function (type) {%>
+                <li class="<%= type %>">
+                    <span><%= type %></span>
+                </li>
+                <% }) %>
+                <% } %>
+            </ul>
+            <% if (model.url) { %>
+            <a class="btn" target="_blank" href="<%= model.url %>" class="open">
+                <span class="wrap">
+                    <span class="front paper">
+                        Open project
+                    </span>
+                    <span class="back paper">
+                        Open project
+                    </span>
+                </span>
+                
+            </a>
+            <% } %>
+        </div>
+        <div class="coll app">
+            <% if (model.pics.length) { %>
+            <ul class="projects">
+                <% _.each(model.pics, function (pic) {%>
+                    <li class="type_<%= pic.height %>">
+                        <span><img src="<%= imgPath(pic.name) %>" alt="<%= model.title %>"/></span>
+                    </li>
+                <% }) %>
+            </ul>
+            <% } %>
+        </div>
+    </div>
+
+    <div class="shifLeft">
+        <a href="/portfolio">
+            A
+        </a>
+    </div>
+</div>

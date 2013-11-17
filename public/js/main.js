@@ -28,6 +28,12 @@ require({
                 'zepto'
             ],
             exports: 'Geo'
+        },
+        plugins: {
+            deps: [
+                'zepto'
+            ],
+            exports: 'Plugins'
         }
     },
     paths: {
@@ -37,6 +43,7 @@ require({
         handlebars: '../bower_components/handlebars/handlebars',
         underscore: '../bower_components/underscore/underscore',
         geo: 'plugins/geo',
+        plugins: 'plugins/plugins', 
         text: '../bower_components/text/text',
         backbone: '../bower_components/backbone/backbone',
         template: '../js-templates'

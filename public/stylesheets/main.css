@@ -3,105 +3,152 @@
   src: url("../fonts/gearedslab-bold-webfont.eot");
   src: url("../fonts/gearedslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gearedslab-bold-webfont.woff") format("woff"), url("../fonts/gearedslab-bold-webfont.ttf") format("truetype"), url("../fonts/gearedslab-bold-webfont.svg#geared_slabbold") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'geared_slabregular';
   src: url("../fonts/gearedslab-webfont.eot");
   src: url("../fonts/gearedslab-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gearedslab-webfont.woff") format("woff"), url("../fonts/gearedslab-webfont.ttf") format("truetype"), url("../fonts/gearedslab-webfont.svg#geared_slabregular") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot");
   src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'mission_scriptregular';
   src: url("../fonts/mission-script-webfont.eot");
   src: url("../fonts/mission-script-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/mission-script-webfont.woff") format("woff"), url("../fonts/mission-script-webfont.ttf") format("truetype"), url("../fonts/mission-script-webfont.svg#mission_scriptregular") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
+/* line 1, ../sass/helpers/defaults.scss */
 * {
   font-family: 'Open Sans', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  *::selection {
-    background: red;
-    color: white; }
+  box-sizing: border-box;
+}
+/* line 3, ../sass/helpers/defaults.scss */
+*::selection {
+  background: red;
+  color: white;
+}
 
+/* line 8, ../sass/helpers/defaults.scss */
 body {
-  font-size: 100%; }
+  font-size: 100%;
+}
 
+/* line 11, ../sass/helpers/defaults.scss */
 .center {
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
+/* line 15, ../sass/helpers/defaults.scss */
 .box {
   width: 650px;
   position: relative;
   padding: 20px;
   border: solid 1px #cccccc;
-  top: 150px; }
+  top: 150px;
+}
 
+/* line 22, ../sass/helpers/defaults.scss */
 form div {
-  padding: 0 0 10px 0; }
+  padding: 0 0 10px 0;
+}
+/* line 25, ../sass/helpers/defaults.scss */
 form label {
   color: #999999;
   display: inline-block;
   padding-left: 5px;
-  font-size: 95%; }
+  font-size: 95%;
+}
+/* line 28, ../sass/helpers/defaults.scss */
 form input#color {
   width: 50px;
-  height: 50px; }
+  height: 50px;
+}
+/* line 31, ../sass/helpers/defaults.scss */
 form input, form textarea {
   border: solid 1px #cccccc;
   padding: 10px;
   background: white;
   font-size: 95%;
-  width: 100%; }
-  form input[type=checkbox], form input[type=radio], form textarea[type=checkbox], form textarea[type=radio] {
-    width: auto; }
-  form input:focus, form textarea:focus {
-    outline: 0;
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+  width: 100%;
+}
+/* line 35, ../sass/helpers/defaults.scss */
+form input[type=checkbox], form input[type=radio], form textarea[type=checkbox], form textarea[type=radio] {
+  width: auto;
+}
+/* line 37, ../sass/helpers/defaults.scss */
+form input:focus, form textarea:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+/* line 42, ../sass/helpers/defaults.scss */
 form textarea {
-  height: 250px; }
+  height: 250px;
+}
 
+/* line 48, ../sass/helpers/defaults.scss */
 h1, h2, h3, h4 {
   font-weight: 200;
   padding-bottom: 15px;
-  margin: 0; }
+  margin: 0;
+}
 
+/* line 54, ../sass/helpers/defaults.scss */
 a {
-  color: black; }
-  a:hover {
-    color: #999999; }
+  color: black;
+}
+/* line 56, ../sass/helpers/defaults.scss */
+a:hover {
+  color: #999999;
+}
 
+/* line 61, ../sass/helpers/defaults.scss */
 header h1 {
   border-bottom: solid 1px #cccccc;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
+/* line 66, ../sass/helpers/defaults.scss */
 table {
   width: 100%;
-  border-collapse: collapse; }
-  table td, table th {
-    padding: 10px;
-    border: solid 1px #cccccc; }
-  table th {
-    font-weight: 200; }
-  table thead {
-    background: #e0e0e0; }
+  border-collapse: collapse;
+}
+/* line 69, ../sass/helpers/defaults.scss */
+table td, table th {
+  padding: 10px;
+  border: solid 1px #cccccc;
+}
+/* line 72, ../sass/helpers/defaults.scss */
+table th {
+  font-weight: 200;
+}
+/* line 75, ../sass/helpers/defaults.scss */
+table thead {
+  background: #e0e0e0;
+}
 
+/* line 79, ../sass/helpers/defaults.scss */
 .spaceLeft {
-  padding-left: 10px; }
+  padding-left: 10px;
+}
 
+/* line 82, ../sass/helpers/defaults.scss */
 .btn {
   border: solid red 1px;
   text-transform: uppercase;
@@ -118,14 +165,20 @@ table {
   font-weight: bold;
   background: white;
   outline: 0;
-  margin-bottom: 10px; }
-  .btn:hover {
-    background: red;
-    color: white; }
+  margin-bottom: 10px;
+}
+/* line 91, ../sass/helpers/defaults.scss */
+.btn:hover {
+  background: red;
+  color: white;
+}
 
+/* line 95, ../sass/helpers/defaults.scss */
 .delete {
-  color: red; }
+  color: red;
+}
 
+/* line 98, ../sass/helpers/defaults.scss */
 .delBtn {
   display: inline-block;
   padding: 0 10px;
@@ -137,219 +190,300 @@ table {
   border-radius: 30px;
   height: 30px;
   line-height: 30px;
-  margin-left: 10px; }
+  margin-left: 10px;
+}
 
+/* line 102, ../sass/helpers/defaults.scss */
 .shiftContentRight {
-  text-align: right; }
+  text-align: right;
+}
 
+/* line 105, ../sass/helpers/defaults.scss */
 .content {
-  padding: 20px; }
+  padding: 20px;
+}
 
+/* line 108, ../sass/helpers/defaults.scss */
 .message {
   border: solid 1px red;
   margin-bottom: 20;
-  top: 100px; }
-  .message.error p {
-    color: red; }
+  top: 100px;
+}
+/* line 111, ../sass/helpers/defaults.scss */
+.message.error p {
+  color: red;
+}
 
+/* line 117, ../sass/helpers/defaults.scss */
 body.webApp {
   background: black;
-  color: white; }
-  body.webApp h1, body.webApp h2, body.webApp h3 {
-    background: none;
-    font-family: 'mission_scriptregular', sans-serif;
-    line-height: 1.3em; }
-    body.webApp h1 span, body.webApp h1 strong, body.webApp h2 span, body.webApp h2 strong, body.webApp h3 span, body.webApp h3 strong {
-      font-family: 'mission_scriptregular', sans-serif;
-      font-size: 150%;
-      display: block;
-      font-weight: 200; }
-    body.webApp h1 strong, body.webApp h2 strong, body.webApp h3 strong {
-      margin-left: 10%; }
-  body.webApp h4 {
-    font-family: 'mission_scriptregular', sans-serif;
-    font-size: 180%;
-    font-weight: 200; }
-  body.webApp a {
-    color: red;
-    -webkit-transition: All, 0.3s;
-    -moz-transition: All, 0.3s;
-    -o-transition: All, 0.3s;
-    transition: All, 0.3s;
-    background: none; }
-    body.webApp a:hover {
-      text-decoration: none;
-      background: black; }
-  body.webApp h2.screamer, body.webApp h1.screamer, body.webApp h1.screamer span, body.webApp h2.screamer span {
-    font-weight: 200;
-    padding-bottom: 15px;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: white;
-    font-family: 'geared_slabregular', sans-serif;
-    color: white;
-    text-transform: uppercase;
-    height: 84px;
-    font-size: 340%;
-    padding: 2px 0;
-    display: inline-block;
-    position: relative;
-    margin: 20px 20px 0 20px; }
-    body.webApp h2.screamer:before, body.webApp h2.screamer:after, body.webApp h1.screamer:before, body.webApp h1.screamer:after, body.webApp h1.screamer span:before, body.webApp h1.screamer span:after, body.webApp h2.screamer span:before, body.webApp h2.screamer span:after {
-      color: white;
-      display: block;
-      font-family: 'icomoon', sans-serif;
-      width: 80px;
-      font-size: 83px;
-      position: absolute;
-      text-align: left;
-      line-height: 80px;
-      text-indent: 0;
-      text-align: left;
-      top: 3px; }
-    body.webApp h2.screamer:before, body.webApp h1.screamer:before, body.webApp h1.screamer span:before, body.webApp h2.screamer span:before {
-      content: '[';
-      left: -20px; }
-    body.webApp h2.screamer:after, body.webApp h1.screamer:after, body.webApp h1.screamer span:after, body.webApp h2.screamer span:after {
-      content: ']';
-      text-align: right;
-      right: -20px; }
-    body.webApp h2.screamer span, body.webApp h1.screamer span, body.webApp h1.screamer span span, body.webApp h2.screamer span span {
-      background: black;
-      font-size: 100%;
-      padding: 0 20px;
-      z-index: 10;
-      margin: 0;
-      height: 80px;
-      line-height: 90px;
-      font-weight: 200; }
-      body.webApp h2.screamer span:before, body.webApp h2.screamer span:after, body.webApp h1.screamer span:before, body.webApp h1.screamer span:after, body.webApp h1.screamer span span:before, body.webApp h1.screamer span span:after, body.webApp h2.screamer span span:before, body.webApp h2.screamer span span:after {
-        color: black;
-        font-size: 80px;
-        top: 1px; }
-      body.webApp h2.screamer span:before, body.webApp h1.screamer span:before, body.webApp h1.screamer span span:before, body.webApp h2.screamer span span:before {
-        left: -18px; }
-      body.webApp h2.screamer span:after, body.webApp h1.screamer span:after, body.webApp h1.screamer span span:after, body.webApp h2.screamer span span:after {
-        right: -18px; }
-    body.webApp h2.screamer strong, body.webApp h1.screamer strong, body.webApp h1.screamer span strong, body.webApp h2.screamer span strong {
-      position: absolute;
-      right: -20px;
-      top: -43px;
-      font-family: 'mission_scriptregular', sans-serif;
-      font-size: 65%;
-      z-index: 10;
-      text-transform: none;
-      font-weight: 200; }
-  body.webApp div.btnWrap {
-    padding: 5px 0; }
-  body.webApp a.btn {
-    display: inline-block;
-    -webkit-perspective: 1500px;
-    -moz-perspective: 1500px;
-    -ms-perspective: 1500px;
-    -o-perspective: 1500px;
-    perspective: 1500px;
-    position: relative;
-    background: none;
-    border: none;
-    padding: 0;
-    color: white;
-    height: 70px; }
-    body.webApp a.btn span.wrap {
-      position: relative;
-      display: block;
-      -webkit-transition: All, 0.3s ease;
-      -moz-transition: All, 0.3s ease;
-      -o-transition: All, 0.3s ease;
-      transition: All, 0.3s ease;
-      -webkit-transform-style: preserve-3d;
-      -moz-transform-style: preserve-3d;
-      -ms-transform-style: preserve-3d;
-      -o-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      -webkit-transform-origin: 0 0 0 50%;
-      -moz-transform-origin: 0 0 0 50%;
-      -ms-transform-origin: 0 0 0 50%;
-      -o-transform-origin: 0 0 0 50%;
-      transform-origin: 0 0 0 50%; }
-    body.webApp a.btn span.paper {
-      display: block;
-      border: solid 1px white;
-      font-family: 'geared_slabregular', sans-serif;
-      -webkit-transform-origin: 0 0 0 50%;
-      -moz-transform-origin: 0 0 0 50%;
-      -ms-transform-origin: 0 0 0 50%;
-      -o-transform-origin: 0 0 0 50%;
-      transform-origin: 0 0 0 50%;
-      height: 60px;
-      line-height: 60px;
-      padding: 0 20px;
-      font-size: 180%;
-      position: relative;
-      -webkit-backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
-      -ms-backface-visibility: hidden;
-      -o-backface-visibility: hidden;
-      backface-visibility: hidden; }
-      body.webApp a.btn span.paper.back {
-        background: white;
-        color: black;
-        color: white;
-        -webkit-transform: rotateX(-85deg);
-        -moz-transform: rotateX(-85deg);
-        -ms-transform: rotateX(-85deg);
-        -o-transform: rotateX(-85deg);
-        transform: rotateX(-85deg);
-        -webkit-transition: All, 0.3s ease;
-        -moz-transition: All, 0.3s ease;
-        -o-transition: All, 0.3s ease;
-        transition: All, 0.3s ease; }
-    body.webApp a.btn:hover span.wrap {
-      -webkit-transform: rotateX(90deg) translateY(-60px);
-      -moz-transform: rotateX(90deg) translateY(-60px);
-      -ms-transform: rotateX(90deg) translateY(-60px);
-      -o-transform: rotateX(90deg) translateY(-60px);
-      transform: rotateX(90deg) translateY(-60px); }
-      body.webApp a.btn:hover span.wrap span.back {
-        color: black; }
+  color: white;
+}
+/* line 121, ../sass/helpers/defaults.scss */
+body.webApp h1, body.webApp h2, body.webApp h3 {
+  background: none;
+  font-family: 'mission_scriptregular', sans-serif;
+  line-height: 1.3em;
+}
+/* line 125, ../sass/helpers/defaults.scss */
+body.webApp h1 span, body.webApp h1 strong, body.webApp h2 span, body.webApp h2 strong, body.webApp h3 span, body.webApp h3 strong {
+  font-family: 'mission_scriptregular', sans-serif;
+  font-size: 150%;
+  display: block;
+  font-weight: 200;
+}
+/* line 129, ../sass/helpers/defaults.scss */
+body.webApp h1 strong, body.webApp h2 strong, body.webApp h3 strong {
+  margin-left: 10%;
+}
+/* line 133, ../sass/helpers/defaults.scss */
+body.webApp h4 {
+  font-family: 'mission_scriptregular', sans-serif;
+  font-size: 180%;
+  font-weight: 200;
+}
+/* line 136, ../sass/helpers/defaults.scss */
+body.webApp a {
+  color: red;
+  -webkit-transition: All, 0.3s;
+  -moz-transition: All, 0.3s;
+  -o-transition: All, 0.3s;
+  transition: All, 0.3s;
+  background: none;
+}
+/* line 138, ../sass/helpers/defaults.scss */
+body.webApp a:hover {
+  text-decoration: none;
+  background: black;
+}
+/* line 142, ../sass/helpers/defaults.scss */
+body.webApp h2.screamer, body.webApp h1.screamer, body.webApp h1.screamer span, body.webApp h2.screamer span {
+  font-weight: 200;
+  padding-bottom: 15px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: white;
+  font-family: 'geared_slabregular', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  height: 84px;
+  font-size: 340%;
+  padding: 2px 0;
+  display: inline-block;
+  position: relative;
+  margin: 20px 20px 0 20px;
+}
+/* line 149, ../sass/helpers/defaults.scss */
+body.webApp h2.screamer:before, body.webApp h2.screamer:after, body.webApp h1.screamer:before, body.webApp h1.screamer:after, body.webApp h1.screamer span:before, body.webApp h1.screamer span:after, body.webApp h2.screamer span:before, body.webApp h2.screamer span:after {
+  color: white;
+  display: block;
+  font-family: 'icomoon', sans-serif;
+  width: 80px;
+  font-size: 83px;
+  position: absolute;
+  text-align: left;
+  line-height: 80px;
+  text-indent: 0;
+  text-align: left;
+  top: 3px;
+}
+/* line 154, ../sass/helpers/defaults.scss */
+body.webApp h2.screamer:before, body.webApp h1.screamer:before, body.webApp h1.screamer span:before, body.webApp h2.screamer span:before {
+  content: '[';
+  left: -20px;
+}
+/* line 158, ../sass/helpers/defaults.scss */
+body.webApp h2.screamer:after, body.webApp h1.screamer:after, body.webApp h1.screamer span:after, body.webApp h2.screamer span:after {
+  content: ']';
+  text-align: right;
+  right: -20px;
+}
+/* line 163, ../sass/helpers/defaults.scss */
+body.webApp h2.screamer span, body.webApp h1.screamer span, body.webApp h1.screamer span span, body.webApp h2.screamer span span {
+  background: black;
+  font-size: 100%;
+  padding: 0 20px;
+  z-index: 10;
+  margin: 0;
+  height: 80px;
+  line-height: 90px;
+  font-weight: 200;
+}
+/* line 167, ../sass/helpers/defaults.scss */
+body.webApp h2.screamer span:before, body.webApp h2.screamer span:after, body.webApp h1.screamer span:before, body.webApp h1.screamer span:after, body.webApp h1.screamer span span:before, body.webApp h1.screamer span span:after, body.webApp h2.screamer span span:before, body.webApp h2.screamer span span:after {
+  color: black;
+  font-size: 80px;
+  top: 1px;
+}
+/* line 170, ../sass/helpers/defaults.scss */
+body.webApp h2.screamer span:before, body.webApp h1.screamer span:before, body.webApp h1.screamer span span:before, body.webApp h2.screamer span span:before {
+  left: -18px;
+}
+/* line 173, ../sass/helpers/defaults.scss */
+body.webApp h2.screamer span:after, body.webApp h1.screamer span:after, body.webApp h1.screamer span span:after, body.webApp h2.screamer span span:after {
+  right: -18px;
+}
+/* line 177, ../sass/helpers/defaults.scss */
+body.webApp h2.screamer strong, body.webApp h1.screamer strong, body.webApp h1.screamer span strong, body.webApp h2.screamer span strong {
+  position: absolute;
+  right: -20px;
+  top: -43px;
+  font-family: 'mission_scriptregular', sans-serif;
+  font-size: 65%;
+  z-index: 10;
+  text-transform: none;
+  font-weight: 200;
+}
+/* line 185, ../sass/helpers/defaults.scss */
+body.webApp div.btnWrap {
+  padding: 5px 0;
+}
+/* line 189, ../sass/helpers/defaults.scss */
+body.webApp a.btn {
+  display: inline-block;
+  -webkit-perspective: 1500px;
+  -moz-perspective: 1500px;
+  -ms-perspective: 1500px;
+  -o-perspective: 1500px;
+  perspective: 1500px;
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+  color: white;
+  height: 70px;
+}
+/* line 193, ../sass/helpers/defaults.scss */
+body.webApp a.btn span.wrap {
+  position: relative;
+  display: block;
+  -webkit-transition: All, 0.3s ease;
+  -moz-transition: All, 0.3s ease;
+  -o-transition: All, 0.3s ease;
+  transition: All, 0.3s ease;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 0 0 0 50%;
+  -moz-transform-origin: 0 0 0 50%;
+  -ms-transform-origin: 0 0 0 50%;
+  -o-transform-origin: 0 0 0 50%;
+  transform-origin: 0 0 0 50%;
+}
+/* line 199, ../sass/helpers/defaults.scss */
+body.webApp a.btn span.paper {
+  display: block;
+  border: solid 1px white;
+  font-family: 'geared_slabregular', sans-serif;
+  -webkit-transform-origin: 0 0 0 50%;
+  -moz-transform-origin: 0 0 0 50%;
+  -ms-transform-origin: 0 0 0 50%;
+  -o-transform-origin: 0 0 0 50%;
+  transform-origin: 0 0 0 50%;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  font-size: 180%;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 206, ../sass/helpers/defaults.scss */
+body.webApp a.btn span.paper.back {
+  background: white;
+  color: black;
+  color: white;
+  -webkit-transform: rotateX(-85deg);
+  -moz-transform: rotateX(-85deg);
+  -ms-transform: rotateX(-85deg);
+  -o-transform: rotateX(-85deg);
+  transform: rotateX(-85deg);
+  -webkit-transition: All, 0.3s ease;
+  -moz-transition: All, 0.3s ease;
+  -o-transition: All, 0.3s ease;
+  transition: All, 0.3s ease;
+}
+/* line 213, ../sass/helpers/defaults.scss */
+body.webApp a.btn:hover span.wrap {
+  -webkit-transform: rotateX(90deg) translateY(-60px);
+  -moz-transform: rotateX(90deg) translateY(-60px);
+  -ms-transform: rotateX(90deg) translateY(-60px);
+  -o-transform: rotateX(90deg) translateY(-60px);
+  transform: rotateX(90deg) translateY(-60px);
+}
+/* line 215, ../sass/helpers/defaults.scss */
+body.webApp a.btn:hover span.wrap span.back {
+  color: black;
+}
 
 @keyframes "movingBackground" {
+  /* line 44, ../sass/helpers/mixins.scss */
   from {
-    background-position: 0 0; }
+    background-position: 0 0;
+  }
 
+  /* line 47, ../sass/helpers/mixins.scss */
   to {
-    background-position: 708px 0; } }
+    background-position: 708px 0;
+  }
+}
 
 @-moz-keyframes movingBackground {
+  /* line 54, ../sass/helpers/mixins.scss */
   from {
-    background-position: 0 0; }
+    background-position: 0 0;
+  }
 
+  /* line 57, ../sass/helpers/mixins.scss */
   to {
-    background-position: 708px 0; } }
+    background-position: 708px 0;
+  }
+}
 
 @-webkit-keyframes "movingBackground" {
+  /* line 64, ../sass/helpers/mixins.scss */
   from {
-    background-position: 0 0; }
+    background-position: 0 0;
+  }
 
+  /* line 67, ../sass/helpers/mixins.scss */
   to {
-    background-position: 708px 0; } }
+    background-position: 708px 0;
+  }
+}
 
 @-ms-keyframes "movingBackground" {
+  /* line 74, ../sass/helpers/mixins.scss */
   from {
-    background-position: 0 0; }
+    background-position: 0 0;
+  }
 
+  /* line 77, ../sass/helpers/mixins.scss */
   to {
-    background-position: 708px 0; } }
+    background-position: 708px 0;
+  }
+}
 
 @-o-keyframes "movingBackground" {
+  /* line 84, ../sass/helpers/mixins.scss */
   from {
-    background-position: 0 0; }
+    background-position: 0 0;
+  }
 
+  /* line 87, ../sass/helpers/mixins.scss */
   to {
-    background-position: 708px 0; } }
+    background-position: 708px 0;
+  }
+}
 
+/* line 2, ../sass/template.scss */
 body.webApp {
   background: url(../../images/wood_tiler.jpg) left top;
   animation-duration: 50s;
@@ -370,164 +504,206 @@ body.webApp {
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
   padding: 0;
-  margin: 0; }
-  body.webApp footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 60;
-    height: 60px;
-    background: white;
-    width: 100%; }
-    body.webApp footer a {
-      text-decoration: none;
-      display: inline-block;
-      color: black; }
-    body.webApp footer a.logo {
-      font-family: 'icomoon', sans-serif;
-      height: 60px;
-      width: 80px;
-      line-height: 60px;
-      font-size: 40px;
-      text-align: center;
-      border-right: solid 1px #cccccc;
-      position: relative; }
-      body.webApp footer a.logo:after {
-        content: '';
-        display: block;
-        background: red;
-        width: 7px;
-        height: 7px;
-        position: absolute;
-        right: 15px;
-        bottom: 10px;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%;
-        border-radius: 100%; }
-    body.webApp footer a.sound {
-      height: 60px;
-      line-height: 60px;
-      padding: 0 20px;
-      font-weight: bold;
-      text-transform: uppercase; }
-    body.webApp footer a.logo, body.webApp footer a.sound {
-      float: left;
-      -webkit-transition: All 0.3s;
-      -moz-transition: All 0.3s;
-      -o-transition: All 0.3s;
-      transition: All 0.3s; }
-      body.webApp footer a.logo:hover, body.webApp footer a.sound:hover {
-        background: black;
-        color: white; }
-    body.webApp footer nav {
-      position: absolute;
-      right: 0;
-      height: 60px;
-      text-align: right;
-      background: black; }
-      body.webApp footer nav ul {
-        margin: 0;
-        padding: 0; }
-      body.webApp footer nav li {
-        display: inline-block; }
-        body.webApp footer nav li a {
-          height: 60px;
-          line-height: 60px;
-          float: left;
-          background: white;
-          text-decoration: none;
-          border-left: solid 1px #cccccc;
-          padding: 0 20px;
-          text-transform: uppercase;
-          font-weight: bold;
-          -webkit-transition: All 0.3s;
-          -moz-transition: All 0.3s;
-          -o-transition: All 0.3s;
-          transition: All 0.3s;
-          -webkit-transform: translateY(0px);
-          -moz-transform: translateY(0px);
-          -ms-transform: translateY(0px);
-          -o-transform: translateY(0px);
-          transform: translateY(0px); }
-          body.webApp footer nav li a:hover {
-            -webkit-transform: translateY(10px);
-            -moz-transform: translateY(10px);
-            -ms-transform: translateY(10px);
-            -o-transform: translateY(10px);
-            transform: translateY(10px);
-            background: white; }
+  margin: 0;
+}
+/* line 7, ../sass/template.scss */
+body.webApp footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 60;
+  height: 60px;
+  background: white;
+  width: 100%;
+}
+/* line 10, ../sass/template.scss */
+body.webApp footer a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+/* line 13, ../sass/template.scss */
+body.webApp footer a.logo {
+  font-family: 'icomoon', sans-serif;
+  height: 60px;
+  width: 80px;
+  line-height: 60px;
+  font-size: 40px;
+  text-align: center;
+  border-right: solid 1px #cccccc;
+  position: relative;
+}
+/* line 17, ../sass/template.scss */
+body.webApp footer a.logo:after {
+  content: '';
+  display: block;
+  background: red;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+/* line 23, ../sass/template.scss */
+body.webApp footer a.sound {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 28, ../sass/template.scss */
+body.webApp footer a.logo, body.webApp footer a.sound {
+  float: left;
+  -webkit-transition: All 0.3s;
+  -moz-transition: All 0.3s;
+  -o-transition: All 0.3s;
+  transition: All 0.3s;
+}
+/* line 33, ../sass/template.scss */
+body.webApp footer a.logo:hover, body.webApp footer a.sound:hover {
+  background: black;
+  color: white;
+}
+/* line 38, ../sass/template.scss */
+body.webApp footer nav {
+  position: absolute;
+  right: 0;
+  height: 60px;
+  text-align: right;
+  background: black;
+}
+/* line 41, ../sass/template.scss */
+body.webApp footer nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 44, ../sass/template.scss */
+body.webApp footer nav li {
+  display: inline-block;
+}
+/* line 46, ../sass/template.scss */
+body.webApp footer nav li a {
+  height: 60px;
+  line-height: 60px;
+  float: left;
+  background: white;
+  text-decoration: none;
+  border-left: solid 1px #cccccc;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transition: All 0.3s;
+  -moz-transition: All 0.3s;
+  -o-transition: All 0.3s;
+  transition: All 0.3s;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+/* line 52, ../sass/template.scss */
+body.webApp footer nav li a:hover {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+  background: white;
+}
 
+/* line 3, ../sass/home.scss */
 div.center.slide {
   position: absolute;
   left: 50%;
   margin-left: -490px;
-  top: 0; }
+  top: 0;
+}
 
+/* line 7, ../sass/home.scss */
 div.firstSlide, div.secondSlide, div.thirdSlide {
   width: 980px;
-  z-index: 2; }
-  div.firstSlide div.me, div.secondSlide div.me, div.thirdSlide div.me {
-    background: url(../../images/me.png) 0px 0px no-repeat;
-    display: inline-block;
-    width: 900px;
-    height: 352px;
-    position: absolute;
-    bottom: 0;
-    left: 0px;
-    z-index: 1;
-    -webkit-transform: rotateX(120deg);
-    -moz-transform: rotateX(120deg);
-    -ms-transform: rotateX(120deg);
-    -o-transform: rotateX(120deg);
-    transform: rotateX(120deg);
-    -webkit-transition: All, 0.5s ease;
-    -moz-transition: All, 0.5s ease;
-    -o-transition: All, 0.5s ease;
-    transition: All, 0.5s ease;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform-origin: 0 bottom 0 50%;
-    -moz-transform-origin: 0 bottom 0 50%;
-    -ms-transform-origin: 0 bottom 0 50%;
-    -o-transform-origin: 0 bottom 0 50%;
-    transform-origin: 0 bottom 0 50%; }
-  div.firstSlide.show, div.secondSlide.show, div.thirdSlide.show {
-    z-index: 10; }
-    div.firstSlide.show div.me, div.secondSlide.show div.me, div.thirdSlide.show div.me {
-      -webkit-transform: rotateX(0deg);
-      -moz-transform: rotateX(0deg);
-      -ms-transform: rotateX(0deg);
-      -o-transform: rotateX(0deg);
-      transform: rotateX(0deg); }
-    div.firstSlide.show div.leftBlock, div.firstSlide.show div.rightBlock, div.secondSlide.show div.leftBlock, div.secondSlide.show div.rightBlock, div.thirdSlide.show div.leftBlock, div.thirdSlide.show div.rightBlock {
-      width: 300px;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      -o-border-radius: 0;
-      border-radius: 0;
-      height: auto; }
-    div.firstSlide.show div.rightBlock, div.secondSlide.show div.rightBlock, div.thirdSlide.show div.rightBlock {
-      width: 400px; }
-  div.firstSlide div.leftBlock, div.firstSlide div.rightBlock, div.secondSlide div.leftBlock, div.secondSlide div.rightBlock, div.thirdSlide div.leftBlock, div.thirdSlide div.rightBlock {
-    -webkit-transition: All, 1s ease;
-    -moz-transition: All, 1s ease;
-    -o-transition: All, 1s ease;
-    transition: All, 1s ease;
-    width: 0;
-    overflow: hidden;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    border-radius: 100%;
-    padding-top: 10px; }
+  z-index: 2;
+}
+/* line 10, ../sass/home.scss */
+div.firstSlide div.me, div.secondSlide div.me, div.thirdSlide div.me {
+  background: url(../../images/me.png) 0px 0px no-repeat;
+  display: inline-block;
+  width: 900px;
+  height: 352px;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  z-index: 1;
+  -webkit-transform: rotateX(120deg);
+  -moz-transform: rotateX(120deg);
+  -ms-transform: rotateX(120deg);
+  -o-transform: rotateX(120deg);
+  transform: rotateX(120deg);
+  -webkit-transition: All, 0.5s ease;
+  -moz-transition: All, 0.5s ease;
+  -o-transition: All, 0.5s ease;
+  transition: All, 0.5s ease;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 0 bottom 0 50%;
+  -moz-transform-origin: 0 bottom 0 50%;
+  -ms-transform-origin: 0 bottom 0 50%;
+  -o-transform-origin: 0 bottom 0 50%;
+  transform-origin: 0 bottom 0 50%;
+}
+/* line 18, ../sass/home.scss */
+div.firstSlide.show, div.secondSlide.show, div.thirdSlide.show {
+  z-index: 10;
+}
+/* line 20, ../sass/home.scss */
+div.firstSlide.show div.me, div.secondSlide.show div.me, div.thirdSlide.show div.me {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+/* line 23, ../sass/home.scss */
+div.firstSlide.show div.leftBlock, div.firstSlide.show div.rightBlock, div.secondSlide.show div.leftBlock, div.secondSlide.show div.rightBlock, div.thirdSlide.show div.leftBlock, div.thirdSlide.show div.rightBlock {
+  width: 300px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  height: auto;
+}
+/* line 27, ../sass/home.scss */
+div.firstSlide.show div.rightBlock, div.secondSlide.show div.rightBlock, div.thirdSlide.show div.rightBlock {
+  width: 400px;
+}
+/* line 31, ../sass/home.scss */
+div.firstSlide div.leftBlock, div.firstSlide div.rightBlock, div.secondSlide div.leftBlock, div.secondSlide div.rightBlock, div.thirdSlide div.leftBlock, div.thirdSlide div.rightBlock {
+  -webkit-transition: All, 1s ease;
+  -moz-transition: All, 1s ease;
+  -o-transition: All, 1s ease;
+  transition: All, 1s ease;
+  width: 0;
+  overflow: hidden;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  padding-top: 10px;
+}
 
+/* line 37, ../sass/home.scss */
 div.firstSlide {
   position: absolute;
   height: 500px;
@@ -536,143 +712,217 @@ div.firstSlide {
   -moz-perspective: 1500px;
   -ms-perspective: 1500px;
   -o-perspective: 1500px;
-  perspective: 1500px; }
-  div.firstSlide p {
-    text-align: center;
-    font-size: 140%; }
-  div.firstSlide div.leftBlock {
-    position: absolute;
-    left: 0;
-    top: 80px;
-    width: 300px;
-    z-index: 2;
-    width: 0; }
-    div.firstSlide div.leftBlock div.inner {
-      width: 300px; }
-  div.firstSlide div.rightBlock {
-    position: absolute;
-    left: 600px;
-    top: 80px;
-    width: 0;
-    z-index: 2; }
-    div.firstSlide div.rightBlock div.inner {
-      width: 400px; }
-    div.firstSlide div.rightBlock div.btnWrap {
-      text-align: right;
-      padding-right: 40px; }
-  div.firstSlide div.rightBlock {
-    padding-top: 40px; }
-  div.firstSlide.show div.me {
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
-    transform: rotateX(0deg); }
-  div.firstSlide.show div.leftBlock, div.firstSlide.show div.rightBlock {
-    width: 300px;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border-radius: 0;
-    height: auto; }
-  div.firstSlide.show div.rightBlock {
-    width: 400px; }
-    div.firstSlide.show div.rightBlock div.inner {
-      width: 400px; }
+  perspective: 1500px;
+}
+/* line 43, ../sass/home.scss */
+div.firstSlide p {
+  text-align: center;
+  font-size: 140%;
+}
+/* line 48, ../sass/home.scss */
+div.firstSlide div.leftBlock {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 300px;
+  z-index: 2;
+  width: 0;
+}
+/* line 52, ../sass/home.scss */
+div.firstSlide div.leftBlock div.inner {
+  width: 300px;
+}
+/* line 56, ../sass/home.scss */
+div.firstSlide div.rightBlock {
+  position: absolute;
+  left: 600px;
+  top: 80px;
+  width: 0;
+  z-index: 2;
+}
+/* line 59, ../sass/home.scss */
+div.firstSlide div.rightBlock div.inner {
+  width: 400px;
+}
+/* line 63, ../sass/home.scss */
+div.firstSlide div.rightBlock div.btnWrap {
+  text-align: right;
+  padding-right: 40px;
+}
+/* line 68, ../sass/home.scss */
+div.firstSlide div.rightBlock {
+  padding-top: 40px;
+}
+/* line 73, ../sass/home.scss */
+div.firstSlide.show div.me {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+/* line 76, ../sass/home.scss */
+div.firstSlide.show div.leftBlock, div.firstSlide.show div.rightBlock {
+  width: 300px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  height: auto;
+}
+/* line 80, ../sass/home.scss */
+div.firstSlide.show div.rightBlock {
+  width: 400px;
+}
+/* line 82, ../sass/home.scss */
+div.firstSlide.show div.rightBlock div.inner {
+  width: 400px;
+}
 
+/* line 89, ../sass/home.scss */
 div.secondSlide, div.thirdSlide {
   top: -540px;
   position: absolute;
   height: 500px;
-  overflow: visible; }
-  div.secondSlide div.me, div.thirdSlide div.me {
-    background: url(../../images/me.png) -902px 0px no-repeat;
-    display: inline-block;
-    width: 521px;
-    height: 280px;
-    position: absolute;
-    left: 230px;
-    bottom: -24px;
-    z-index: 13;
-    -webkit-transform: rotateX(90deg);
-    -moz-transform: rotateX(90deg);
-    -ms-transform: rotateX(90deg);
-    -o-transform: rotateX(90deg);
-    transform: rotateX(90deg); }
+  overflow: visible;
+}
+/* line 91, ../sass/home.scss */
+div.secondSlide div.me, div.thirdSlide div.me {
+  background: url(../../images/me.png) -902px 0px no-repeat;
+  display: inline-block;
+  width: 521px;
+  height: 280px;
+  position: absolute;
+  left: 230px;
+  bottom: -24px;
+  z-index: 13;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+}
 
+/* line 97, ../sass/home.scss */
 div.secondSlide div.leftBlock {
   position: absolute;
   left: 0;
   top: 20px;
-  width: 0; }
-  div.secondSlide div.leftBlock div.inner {
-    width: 380px;
-    padding-right: 40px; }
-  div.secondSlide div.leftBlock div.skills ul {
-    background: url(../images/fonts/projects.svg) no-repeat 0 0;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    width: 380px;
-    height: 355px;
-    padding: 0;
-    margin: 0; }
-    div.secondSlide div.leftBlock div.skills ul li {
-      display: none; }
+  width: 0;
+}
+/* line 99, ../sass/home.scss */
+div.secondSlide div.leftBlock div.inner {
+  width: 380px;
+  padding-right: 40px;
+}
+/* line 103, ../sass/home.scss */
+div.secondSlide div.leftBlock div.skills ul {
+  background: url(../images/fonts/projects.svg) no-repeat 0 0;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  width: 380px;
+  height: 355px;
+  padding: 0;
+  margin: 0;
+}
+/* line 107, ../sass/home.scss */
+div.secondSlide div.leftBlock div.skills ul li {
+  display: none;
+}
+/* line 116, ../sass/home.scss */
 div.secondSlide div.rightBlock {
   position: absolute;
   left: 600px;
   top: 30px;
-  z-index: 14; }
-  div.secondSlide div.rightBlock div.inner {
-    width: 400px;
-    padding-right: 10px; }
-  div.secondSlide div.rightBlock p, div.secondSlide div.rightBlock h4 {
-    text-align: center; }
-  div.secondSlide div.rightBlock h4 {
-    font-size: 210%; }
+  z-index: 14;
+}
+/* line 118, ../sass/home.scss */
+div.secondSlide div.rightBlock div.inner {
+  width: 400px;
+  padding-right: 10px;
+}
+/* line 121, ../sass/home.scss */
+div.secondSlide div.rightBlock p, div.secondSlide div.rightBlock h4 {
+  text-align: center;
+}
+/* line 124, ../sass/home.scss */
+div.secondSlide div.rightBlock h4 {
+  font-size: 210%;
+}
+/* line 128, ../sass/home.scss */
 div.secondSlide div.btnWrap {
-  text-align: center; }
+  text-align: center;
+}
+/* line 132, ../sass/home.scss */
 div.secondSlide.show {
-  z-index: 13; }
-  div.secondSlide.show div.leftBlock, div.secondSlide.show div.rightBlock {
-    width: 380px; }
-  div.secondSlide.show div.rightBlock {
-    width: 400px; }
+  z-index: 13;
+}
+/* line 134, ../sass/home.scss */
+div.secondSlide.show div.leftBlock, div.secondSlide.show div.rightBlock {
+  width: 380px;
+}
+/* line 137, ../sass/home.scss */
+div.secondSlide.show div.rightBlock {
+  width: 400px;
+}
 
+/* line 145, ../sass/home.scss */
 div.thirdSlide div.leftBlock {
   position: absolute;
   left: 0;
   top: 20px;
-  width: 0; }
-  div.thirdSlide div.leftBlock div.inner {
-    width: 650px; }
-    div.thirdSlide div.leftBlock div.inner p {
-      width: 350px;
-      font-size: 120%; }
-    div.thirdSlide div.leftBlock div.inner h4 {
-      font-size: 220%;
-      width: 300px; }
+  width: 0;
+}
+/* line 147, ../sass/home.scss */
+div.thirdSlide div.leftBlock div.inner {
+  width: 650px;
+}
+/* line 150, ../sass/home.scss */
+div.thirdSlide div.leftBlock div.inner p {
+  width: 350px;
+  font-size: 120%;
+}
+/* line 153, ../sass/home.scss */
+div.thirdSlide div.leftBlock div.inner h4 {
+  font-size: 220%;
+  width: 300px;
+}
+/* line 161, ../sass/home.scss */
 div.thirdSlide div.rightBlock {
   position: absolute;
   left: 650px;
   top: 250px;
-  z-index: 14; }
-  div.thirdSlide div.rightBlock div.inner {
-    width: 400px; }
-  div.thirdSlide div.rightBlock p, div.thirdSlide div.rightBlock h4 {
-    text-align: center; }
-  div.thirdSlide div.rightBlock h4 {
-    font-size: 210%; }
+  z-index: 14;
+}
+/* line 163, ../sass/home.scss */
+div.thirdSlide div.rightBlock div.inner {
+  width: 400px;
+}
+/* line 166, ../sass/home.scss */
+div.thirdSlide div.rightBlock p, div.thirdSlide div.rightBlock h4 {
+  text-align: center;
+}
+/* line 169, ../sass/home.scss */
+div.thirdSlide div.rightBlock h4 {
+  font-size: 210%;
+}
+/* line 174, ../sass/home.scss */
 div.thirdSlide.show {
-  z-index: 13; }
-  div.thirdSlide.show div.leftBlock, div.thirdSlide.show div.rightBlock {
-    width: 650px; }
-  div.thirdSlide.show div.rightBlock {
-    width: 400px; }
+  z-index: 13;
+}
+/* line 176, ../sass/home.scss */
+div.thirdSlide.show div.leftBlock, div.thirdSlide.show div.rightBlock {
+  width: 650px;
+}
+/* line 179, ../sass/home.scss */
+div.thirdSlide.show div.rightBlock {
+  width: 400px;
+}
 
+/* line 185, ../sass/home.scss */
 div.tool.slides {
   position: absolute;
   background: black;
@@ -682,16 +932,20 @@ div.tool.slides {
   top: 500px;
   bottom: -70px;
   text-align: center;
-  width: 100%; }
-  div.tool.slides a:before {
-    content: 'B';
-    font-family: 'icomoon', sans-serif;
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    margin-left: -30px;
-    font-size: 40px; }
+  width: 100%;
+}
+/* line 190, ../sass/home.scss */
+div.tool.slides a:before {
+  content: 'B';
+  font-family: 'icomoon', sans-serif;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  margin-left: -30px;
+  font-size: 40px;
+}
 
+/* line 1, ../sass/contact.scss */
 div.innerContent.contact.center {
   position: absolute;
   overflow: hidden;
@@ -708,179 +962,671 @@ div.innerContent.contact.center {
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
   border-radius: 100%;
-  min-height: 100%; }
-  div.innerContent.contact.center div.inner {
-    width: 980px;
-    padding: 40px 0 0 500px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0 auto;
-    position: relative;
-    top: 40px;
-    bottom: 0;
-    min-height: 100%; }
-  div.innerContent.contact.center:before {
-    background: black;
-    content: '';
-    position: absolute;
-    left: -50%;
-    width: 150%;
-    bottom: 0;
-    top: 450px; }
-  div.innerContent.contact.center h2.screamer {
-    -webkit-transform: translateY(-250px);
-    -moz-transform: translateY(-250px);
-    -ms-transform: translateY(-250px);
-    -o-transform: translateY(-250px);
-    transform: translateY(-250px);
-    -webkit-transition: All 1s ease-in-out;
-    -moz-transition: All 1s ease-in-out;
-    -o-transition: All 1s ease-in-out;
-    transition: All 1s ease-in-out; }
-    div.innerContent.contact.center h2.screamer strong {
-      font-size: 100%;
-      top: -45px; }
-  div.innerContent.contact.center p {
-    font-size: 120%;
-    text-align: center; }
-  div.innerContent.contact.center ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    padding-top: 30px;
-    position: relative;
-    z-index: 30; }
-    div.innerContent.contact.center ul li {
-      float: left;
-      padding-left: none;
-      margin-right: 10px; }
-      div.innerContent.contact.center ul li a {
-        display: inline-block;
-        -webkit-transition: All, 0.3s;
-        -moz-transition: All, 0.3s;
-        -o-transition: All, 0.3s;
-        transition: All, 0.3s;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%;
-        border-radius: 100%;
-        background: black;
-        border: solid 2px white;
-        text-align: center;
-        position: relative;
-        width: 90px;
-        height: 90px; }
-        div.innerContent.contact.center ul li a:before {
-          content: 'C';
-          position: absolute;
-          width: inherit;
-          height: inherit;
-          display: block;
-          text-align: center;
-          line-height: 90px;
-          color: white;
-          font-family: 'icomoon', sans-serif;
-          font-size: 25px; }
-        div.innerContent.contact.center ul li a span {
-          position: absolute;
-          top: -40px;
-          right: 0;
-          display: none;
-          height: 30px;
-          background: white;
-          color: black;
-          text-decoration: none;
-          padding: 0 10px;
-          -webkit-border-radius: 10px;
-          -moz-border-radius: 10px;
-          -ms-border-radius: 10px;
-          -o-border-radius: 10px;
-          border-radius: 10px;
-          height: 30px;
-          line-height: 30px;
-          width: 220px;
-          text-align: center; }
-          div.innerContent.contact.center ul li a span:before {
-            content: '';
-            position: absolute;
-            top: 30px;
-            right: 30px;
-            border-top: solid 10px white;
-            border-left: solid 10px transparent;
-            border-right: solid 10px transparent; }
-        div.innerContent.contact.center ul li a:hover {
-          background: white;
-          color: black; }
-          div.innerContent.contact.center ul li a:hover:before {
-            color: black; }
-          div.innerContent.contact.center ul li a:hover span {
-            display: block; }
-      div.innerContent.contact.center ul li.email a:before {
-        content: '+'; }
-      div.innerContent.contact.center ul li.linkedin a:before {
-        content: 'N'; }
-  div.innerContent.contact.center div.phone {
-    position: absolute;
-    left: 0;
-    top: 40px;
-    background: url(../../images/me.png) 0px -354px no-repeat;
-    display: inline-block;
-    width: 487px;
-    height: 528px;
-    -webkit-transform: translateX(-200px);
-    -moz-transform: translateX(-200px);
-    -ms-transform: translateX(-200px);
-    -o-transform: translateX(-200px);
-    transform: translateX(-200px);
-    -webkit-transition: All 1s ease-out;
-    -moz-transition: All 1s ease-out;
-    -o-transition: All 1s ease-out;
-    transition: All 1s ease-out; }
-    div.innerContent.contact.center div.phone:before {
-      content: 'H';
-      font-family: 'icomoon', sans-serif;
-      color: white;
-      font-size: 140px;
-      position: absolute;
-      right: 0px;
-      top: -30px;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
-      -webkit-transform: scale(0);
-      -moz-transform: scale(0);
-      -ms-transform: scale(0);
-      -o-transform: scale(0);
-      transform: scale(0); }
-    div.innerContent.contact.center div.phone.show:before {
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1); }
-  div.innerContent.contact.center.show {
-    width: 100%;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border-radius: 0; }
-    div.innerContent.contact.center.show div.inner {
-      width: 980px; }
-    div.innerContent.contact.center.show h2.screamer {
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-      transform: translateY(0); }
-    div.innerContent.contact.center.show div.phone {
-      -webkit-transform: translateX(0px);
-      -moz-transform: translateX(0px);
-      -ms-transform: translateX(0px);
-      -o-transform: translateX(0px);
-      transform: translateX(0px); }
+  min-height: 100%;
+}
+/* line 6, ../sass/contact.scss */
+div.innerContent.contact.center div.inner {
+  width: 980px;
+  padding: 40px 0 0 500px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  top: 40px;
+  bottom: 0;
+  min-height: 100%;
+}
+/* line 12, ../sass/contact.scss */
+div.innerContent.contact.center:before {
+  background: black;
+  content: '';
+  position: absolute;
+  left: -50%;
+  width: 150%;
+  bottom: 0;
+  top: 450px;
+}
+/* line 17, ../sass/contact.scss */
+div.innerContent.contact.center h2.screamer {
+  -webkit-transform: translateY(-250px);
+  -moz-transform: translateY(-250px);
+  -ms-transform: translateY(-250px);
+  -o-transform: translateY(-250px);
+  transform: translateY(-250px);
+  -webkit-transition: All 1s ease-in-out;
+  -moz-transition: All 1s ease-in-out;
+  -o-transition: All 1s ease-in-out;
+  transition: All 1s ease-in-out;
+}
+/* line 20, ../sass/contact.scss */
+div.innerContent.contact.center h2.screamer strong {
+  font-size: 100%;
+  top: -45px;
+}
+/* line 25, ../sass/contact.scss */
+div.innerContent.contact.center p {
+  font-size: 120%;
+  text-align: center;
+}
+/* line 29, ../sass/contact.scss */
+div.innerContent.contact.center ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+  position: relative;
+  z-index: 30;
+}
+/* line 32, ../sass/contact.scss */
+div.innerContent.contact.center ul li {
+  float: left;
+  padding-left: none;
+  margin-right: 10px;
+}
+/* line 35, ../sass/contact.scss */
+div.innerContent.contact.center ul li a {
+  display: inline-block;
+  -webkit-transition: All, 0.3s;
+  -moz-transition: All, 0.3s;
+  -o-transition: All, 0.3s;
+  transition: All, 0.3s;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  background: black;
+  border: solid 2px white;
+  text-align: center;
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+/* line 40, ../sass/contact.scss */
+div.innerContent.contact.center ul li a:before {
+  content: 'C';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  display: block;
+  text-align: center;
+  line-height: 90px;
+  color: white;
+  font-family: 'icomoon', sans-serif;
+  font-size: 25px;
+}
+/* line 45, ../sass/contact.scss */
+div.innerContent.contact.center ul li a span {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  display: none;
+  height: 30px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  padding: 0 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  height: 30px;
+  line-height: 30px;
+  width: 220px;
+  text-align: center;
+}
+/* line 50, ../sass/contact.scss */
+div.innerContent.contact.center ul li a span:before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-top: solid 10px white;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+}
+/* line 57, ../sass/contact.scss */
+div.innerContent.contact.center ul li a:hover {
+  background: white;
+  color: black;
+}
+/* line 60, ../sass/contact.scss */
+div.innerContent.contact.center ul li a:hover:before {
+  color: black;
+}
+/* line 63, ../sass/contact.scss */
+div.innerContent.contact.center ul li a:hover span {
+  display: block;
+}
+/* line 70, ../sass/contact.scss */
+div.innerContent.contact.center ul li.email a:before {
+  content: '+';
+}
+/* line 77, ../sass/contact.scss */
+div.innerContent.contact.center ul li.linkedin a:before {
+  content: 'N';
+}
+/* line 88, ../sass/contact.scss */
+div.innerContent.contact.center div.phone {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  background: url(../../images/me.png) 0px -354px no-repeat;
+  display: inline-block;
+  width: 487px;
+  height: 528px;
+  -webkit-transform: translateX(-200px);
+  -moz-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  -o-transform: translateX(-200px);
+  transform: translateX(-200px);
+  -webkit-transition: All 1s ease-out;
+  -moz-transition: All 1s ease-out;
+  -o-transition: All 1s ease-out;
+  transition: All 1s ease-out;
+}
+/* line 92, ../sass/contact.scss */
+div.innerContent.contact.center div.phone:before {
+  content: 'H';
+  font-family: 'icomoon', sans-serif;
+  color: white;
+  font-size: 140px;
+  position: absolute;
+  right: 0px;
+  top: -30px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+/* line 99, ../sass/contact.scss */
+div.innerContent.contact.center div.phone.show:before {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+/* line 105, ../sass/contact.scss */
+div.innerContent.contact.center.show {
+  width: 100%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 107, ../sass/contact.scss */
+div.innerContent.contact.center.show div.inner {
+  width: 980px;
+}
+/* line 110, ../sass/contact.scss */
+div.innerContent.contact.center.show h2.screamer {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+/* line 113, ../sass/contact.scss */
+div.innerContent.contact.center.show div.phone {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+}
 
-/*@ sourceMappingURL=main.css.map */
+/* line 2, ../sass/portfolio.scss */
+div.portfolio ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-repeat: black;
+  padding-bottom: 60px;
+}
+/* line 7, ../sass/portfolio.scss */
+div.portfolio li {
+  width: 50%;
+  float: left;
+  height: 370px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+/* line 12, ../sass/portfolio.scss */
+div.portfolio li a {
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 21, ../sass/portfolio.scss */
+div.portfolio li a:after {
+  content: '';
+  display: block;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  border: solid 1px white;
+  height: 90%;
+}
+/* line 27, ../sass/portfolio.scss */
+div.portfolio li a:before {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+/* line 32, ../sass/portfolio.scss */
+div.portfolio li a:after, div.portfolio li a:before {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 36, ../sass/portfolio.scss */
+div.portfolio li a strong, div.portfolio li a span {
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  display: block;
+  text-align: center;
+  -webkit-transform: translateY(-150%);
+  -moz-transform: translateY(-150%);
+  -ms-transform: translateY(-150%);
+  -o-transform: translateY(-150%);
+  transform: translateY(-150%);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 42, ../sass/portfolio.scss */
+div.portfolio li a strong {
+  font-family: 'geared_slabregular', sans-serif;
+  font-size: 300%;
+  padding: 80px 0 30px 0;
+  border-bottom: solid 1px white;
+  margin: 0 15%;
+}
+/* line 46, ../sass/portfolio.scss */
+div.portfolio li a span {
+  font-family: 'mission_scriptregular', sans-serif;
+  font-size: 200%;
+  font-weight: 200;
+  -webkit-transform: translateY(310px);
+  -moz-transform: translateY(310px);
+  -ms-transform: translateY(310px);
+  -o-transform: translateY(310px);
+  transform: translateY(310px);
+}
+/* line 50, ../sass/portfolio.scss */
+div.portfolio li a:hover {
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 54, ../sass/portfolio.scss */
+div.portfolio li a:hover strong, div.portfolio li a:hover span {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+/* line 57, ../sass/portfolio.scss */
+div.portfolio li a:hover:after, div.portfolio li a:hover:before {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 63, ../sass/portfolio.scss */
+div.portfolio li.show a {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 72, ../sass/portfolio.scss */
+div.project {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  bottom: 60px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15%;
+}
+/* line 77, ../sass/portfolio.scss */
+div.project div.shifLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15%;
+  background: black;
+  bottom: 0;
+}
+/* line 82, ../sass/portfolio.scss */
+div.project div.shifLeft a {
+  font-family: 'icomoon', sans-serif;
+  color: white;
+  display: block;
+  font-size: 40px;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  margin-top: -20px;
+  padding-left: 30px;
+}
+/* line 87, ../sass/portfolio.scss */
+div.project div.shifLeft a:before {
+  content: "<";
+  position: absolute;
+  left: -10px;
+  top: 0px;
+  display: block;
+}
+/* line 93, ../sass/portfolio.scss */
+div.project div.colls {
+  overflow: hidden;
+  min-height: 100%;
+  height: 100%;
+}
+/* line 95, ../sass/portfolio.scss */
+div.project div.colls div.coll {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 100%;
+  position: relative;
+  bottom: 0;
+  overflow: auto;
+  text-align: center;
+}
+/* line 99, ../sass/portfolio.scss */
+div.project div.colls div.coll h2 {
+  font-size: 200%;
+  width: 80%;
+}
+/* line 101, ../sass/portfolio.scss */
+div.project div.colls div.coll h2 span {
+  width: 100%;
+}
+/* line 104, ../sass/portfolio.scss */
+div.project div.colls div.coll h2 em {
+  font-style: normal;
+  overflow: hidden;
+  display: block;
+  font-family: 'geared_slabregular', sans-serif;
+  text-overflow: ellipsis;
+  height: 83px;
+  white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+/* line 114, ../sass/portfolio.scss */
+div.project div.colls div.coll p {
+  font-size: 90%;
+  text-align: left;
+}
+/* line 117, ../sass/portfolio.scss */
+div.project div.colls div.coll.info {
+  width: 40%;
+  background: rgba(0, 0, 0, 0.4);
+  min-height: 100%;
+}
+/* line 122, ../sass/portfolio.scss */
+div.project div.colls div.coll.app {
+  width: 60%;
+  padding: 0;
+}
+/* line 125, ../sass/portfolio.scss */
+div.project div.colls div.coll a.btn {
+  display: inline-block;
+}
+/* line 128, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.apps {
+  height: auto;
+  position: static;
+  padding-bottom: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+/* line 131, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.apps li {
+  width: auto;
+  height: auto;
+  float: none;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border: solid 1px white;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 10px;
+  padding: 0;
+  position: relative;
+  overflow: visible;
+  z-index: 10;
+}
+/* line 140, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.apps li:before {
+  content: 'W';
+  font-family: 'icomoon', sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+  display: block;
+}
+/* line 145, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.apps li.design:before {
+  content: 'D';
+}
+/* line 150, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.apps li.website:before {
+  content: 'W';
+}
+/* line 155, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.apps li.tablet:before {
+  content: '(';
+}
+/* line 160, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.apps li.mobile:before {
+  content: ')';
+}
+/* line 165, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.apps li.retouching:before {
+  content: '*';
+}
+/* line 169, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.apps li span {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 95%;
+  height: auto;
+  padding: 5px;
+  background: black;
+  color: white;
+  text-indent: 0;
+  height: auto;
+  line-height: 1.3em;
+  font-size: 80%;
+  z-index: 20;
+}
+/* line 178, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.apps li:hover span {
+  display: inline-block;
+}
+/* line 186, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.projects {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+/* line 190, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.projects li {
+  width: 100%;
+  padding: 5% 0;
+  left: 100%;
+  height: 100%;
+  text-align: center;
+}
+/* line 194, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.projects li:first-child {
+  left: 0;
+}
+/* line 197, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.projects li span {
+  display: inline-block;
+  position: relative;
+}
+/* line 199, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.projects li span img {
+  width: 275px;
+  height: auto;
+  position: relative;
+  top: 77px;
+}
+/* line 203, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.projects li span:after {
+  color: black;
+  content: "I";
+  display: block;
+  font-family: 'icomoon', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 600px;
+  text-align: left;
+  text-indent: -19px;
+}
+/* line 212, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.projects li.type_600 span {
+  display: inline-block;
+  position: relative;
+}
+/* line 214, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.projects li.type_600 span img {
+  width: 522px;
+  height: auto;
+  position: relative;
+  top: 55px;
+  left: 0;
+}
+/* line 219, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.projects li.type_600 span:after {
+  color: white;
+  content: "T";
+  display: block;
+  font-family: 'icomoon', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 500px;
+  text-align: left;
+  text-indent: -88px;
+}
+/* line 230, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.projects li.type_550 span {
+  display: inline-block;
+  position: relative;
+}
+/* line 232, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.projects li.type_550 span img {
+  width: 500px;
+  height: auto;
+  position: relative;
+  top: 43px;
+}
+/* line 236, ../sass/portfolio.scss */
+div.project div.colls div.coll ul.projects li.type_550 span:after {
+  color: white;
+  content: "@";
+  display: block;
+  font-family: 'icomoon', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 368px;
+  text-align: left;
+  text-indent: -10px;
+}
+@media screen and (max-width: 768px) {
+  /* line 244, ../sass/portfolio.scss */
+  div.project div.colls div.coll ul.projects li.type_550 span img {
+    width: 380px;
+    top: 33px;
+  }
+  /* line 247, ../sass/portfolio.scss */
+  div.project div.colls div.coll ul.projects li.type_550 span:after {
+    font-size: 277px;
+    text-indent: -5px;
+  }
+}
+@media screen and (min-width: 1295px) {
+  /* line 253, ../sass/portfolio.scss */
+  div.project div.colls div.coll ul.projects li.type_550 span img {
+    width: 658px;
+    top: 55px;
+  }
+  /* line 256, ../sass/portfolio.scss */
+  div.project div.colls div.coll ul.projects li.type_550 span:after {
+    font-size: 481px;
+    text-indent: -11px;
+  }
+}

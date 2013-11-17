@@ -46,7 +46,7 @@ exports.index = function(req, res) {
     if (isLoggedIn(req, res)) {
         db.Projects.find({}).sort({
             order: 1
-        }).execFind(function(err, projects) {
+        }).exec(function(err, projects) {
             if (err) {
                 console.error(err);
             }

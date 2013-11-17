@@ -1,10 +1,34 @@
-/**
- * Module dependencies.
- */
 
-String.prototype.hello = function() {
-    this = this + ' hello';
+
+
+if(process.env.VCAP_SERVICES){
+    var env = JSON.parse(process.env.VCAP_SERVICES);
+    var mongo = env['mongodb-1.8'][0]['credentials'];
 }
+else{
+    var mongo = {
+    "hostname":"localhost",
+    "port":27017,
+    "username":"",
+    "password":"",
+    "name":"",
+    "db":"projects"
+    }
+}
+
+var generate_mongo_url = function(obj){
+    obj.hostname = (obj.hostname || 'localhost');
+    obj.port = (obj.port || 27017);
+    obj.db = (obj.db || 'projects');
+    if(obj.username && obj.password){
+        return "mongodb://" + obj.username + ":" + obj.password + "@" + obj.hostname + ":" + obj.port + "/" + obj.db;
+    }
+    else{
+        return "mongodb://" + obj.hostname + ":" + obj.port + "/" + obj.db;
+    }
+}
+var mongourl = generate_mongo_url(mongo);
+
 
 var express = require('express');
 var routes = require('./routes');
@@ -44,6 +68,8 @@ app.get('/', routes.index);
 app.get('/skills', routes.pages);
 app.get('/iwant', routes.pages);
 app.get('/contact', routes.pages);
+app.get('/portfolio', routes.pages);
+app.get('/project/:id', routes.pages);
 app.get('/projects/list.json', projects.getList);
 app.get('/projects/list/:type', projects.getListByType);
 

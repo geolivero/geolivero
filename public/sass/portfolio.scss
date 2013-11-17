@@ -1,0 +1,271 @@
+div.portfolio {
+    ul {
+        list-style-type: none; margin: 0;
+        padding: 0; overflow: hidden; background-repeat: $black;
+        padding-bottom: 60px;
+    }
+    li {
+        width: 50%; float: left; height: 370px;
+        overflow: hidden; position: relative;
+        @include transition(all 0.8s);
+
+        a {
+            width: 100%; @include background-size(cover);
+
+            background-position: center center; overflow: hidden;
+            height: 100%; display: block; text-decoration: none;
+            @include transition(all 0.5s ease);
+            @include transform(scale(1.5));
+            @include opacity(0);
+
+            &:after {
+                content: '';
+                display: block; width: 90%; position: absolute; left: 5%;
+                top: 5%; border: solid 1px $white;
+                height: 90%;
+            }
+            &:before {
+                content: '';
+                position: absolute; background: rgba($black, 0.8);
+                width: 100%; height: 100%; left: 0; top: 0;
+            }
+            &:after, &:before {
+                @include opacity(0);
+                @include transition(all 0.3s ease);
+            }
+            strong, span {
+                position: relative; padding: 10px 20px;
+                color: $white; display: block; text-align: center;
+                @include transform(translateY(-150%));
+                @include transition(all 0.3s ease);
+            }
+            strong {
+                @include geared; font-size: 300%; padding: 80px 0 30px 0;
+                border-bottom: solid 1px $white; margin: 0 15%; 
+            }
+            span {
+                @include mission; font-size: 200%; font-weight: 200;
+                @include transform(translateY(310px));
+            }
+            &:hover {
+                background-position: center center; 
+                background-repeat: no-repeat;
+                @include background-size(cover);
+                strong, span {
+                    @include transform(translateY(0));
+                }
+                &:after, &:before {
+                    @include opacity(1); 
+                }
+            }
+        }
+        &.show {
+            a {
+                @include opacity(1);
+                @include transform(scale(1));
+            }
+        }
+    }
+}
+
+
+div.project {
+    position: fixed; left: 0; top: 0; width: 100%;
+    bottom: 60px; @include box-sizing(border-box);
+    padding-left: 15%;
+
+    div.shifLeft {
+        position: absolute; left: 0; top: 0;
+        width: 15%; 
+        background: $black; bottom: 0;
+
+        a {
+            @include icon; color: $white; display: block;
+            font-size: 40px; text-decoration: none;
+            position: absolute; top: 50%; left: 20%;
+            margin-top: -20px; padding-left: 30px;
+            &:before {
+                content: "<"; position: absolute; 
+                left: -10px; top: 0px; display: block;
+            }
+        }
+    }
+    div.colls {
+        overflow: hidden; min-height: 100%; height: 100%;
+        div.coll {
+            float: left; @include box-sizing(border-box);
+            padding: 20px; height: 100%; position: relative;
+            bottom: 0; overflow: auto; text-align: center;
+            h2 {
+                font-size: 200%; width: 80%;
+                span {
+                    width: 100%;
+                }
+                em {
+                    font-style: normal; overflow: hidden;
+                    display: block; @include geared;
+                    text-overflow: ellipsis;
+                    height: 83px; white-space: nowrap;
+                    display: block;
+                    overflow: hidden; text-align: center;
+                    width: 100%;
+                }
+            }
+            p {
+                font-size: 90%; text-align: left;
+            }
+            &.info {
+                width: 40%;
+                background: rgba($black, 0.4);
+                min-height: 100%;
+            }
+            &.app {
+                width: 60%; padding: 0;
+            }
+            a.btn {
+                display: inline-block;
+            }
+            ul.apps {
+                height: auto; position: static; padding-bottom: 20px;
+                text-align: center; padding-top: 20px;
+                li {
+                    width: auto; height: auto; float: none;
+                    width: 50px; height: 50px; display: inline-block;
+                    border: solid 1px $white; @include border-radius(100%);
+                    text-align: center; line-height: 50px;
+                    margin-right: 10px; padding: 0;
+                    position: relative; overflow: visible;
+                    z-index: 10;
+
+                    &:before {
+                        content: 'W'; @include icon; font-size: 25px;
+                        font-weight: 200; display: block;
+                    }
+                    &.design {
+                        &:before {
+                            content: 'D';
+                        }
+                    }
+                    &.website {
+                        &:before {
+                            content: 'W';
+                        }
+                    }
+                    &.tablet {
+                        &:before {
+                            content: '(';
+                        }
+                    }
+                    &.mobile {
+                        &:before {
+                            content: ')';
+                        }
+                    }
+                    &.retouching {
+                        &:before {
+                            content: '*';
+                        }
+                    }
+                    span {
+                        display: none; position: absolute;
+                        left: 0; top: 95%;  height: auto;
+                        padding: 5px; background: $black;
+                        color: $white; text-indent: 0; height: auto;
+                        line-height: 1.3em; font-size: 80%;
+                        z-index: 20;
+                    }
+                    &:hover {
+                        span {
+                            display: inline-block;
+                        }
+                    }
+                    
+                }
+            }
+
+            ul.projects {
+                width: 100%; padding: 0; margin: 0;
+                height: 100%;
+                position: relative;
+                li {
+                    width: 100%; padding: 5% 0;                    
+                    left: 100%; height: 100%; 
+                    text-align: center;  
+                    &:first-child {
+                        left: 0;
+                    }
+                    span {
+                        display: inline-block; position: relative;
+                        img {
+                            width: 275px; height: auto;
+                            position: relative; top: 77px;
+                        }
+                        &:after {
+                            color: $black; content: "I"; display: block;
+                            @include icon; position: absolute;
+                            left: 0; top: 0; font-size: 600px;
+                            text-align: left; text-indent: -19px;
+
+                        }
+                    }
+                    &.type_600 {
+                        span {
+                            display: inline-block; position: relative;
+                            img {
+                                width: 522px; height: auto;
+                                position: relative; top: 55px;
+                                left: 0;
+                            }
+                            &:after {
+                                color: $white; content: "T"; display: block;
+                                @include icon; position: absolute;
+                                left: 0; top: 0; font-size: 500px;
+                                text-align: left; text-indent: -88px;
+
+                            }
+                        }
+                        
+                    }
+                    &.type_550 {
+                       span {
+                            display: inline-block; position: relative;
+                            img {
+                                width: 500px; height: auto;
+                                position: relative; top: 43px;
+                            }
+                            &:after {
+                                color: $white; content: "@"; display: block;
+                                @include icon; position: absolute;
+                                left: 0; top: 0; font-size: 368px;
+                                text-align: left; text-indent: -10px;
+
+                            }
+                            @media screen and (max-width: 768px) {
+                                img {
+                                    width: 380px; top: 33px;
+                                }
+                                &:after {
+                                    font-size: 277px; text-indent: -5px;
+
+                                }
+                            }
+                            @media screen and (min-width: 1295px) {
+                                img {
+                                    width: 658px; top: 55px;
+                                }
+                                &:after {
+                                    font-size: 481px; text-indent: -11px;
+
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+

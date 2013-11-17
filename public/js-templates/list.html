@@ -1,0 +1,8 @@
+<a href="/project/<%= model._id %>" style="background-image: url(<%= imgPath(model.frontPic.name) %>); ">
+    <strong>
+        <%= model.title %>
+    </strong>
+    <span>
+        <%= model.body.toString().replace(/(<([^>]+)>)/ig, '').substring(0, 40) + '...' %>
+    </span>
+</a>

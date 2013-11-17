@@ -22,6 +22,7 @@ rewriteData = function(projects, callback) {
             title: pr.title,
             body: pr.body,
             frontPic: pr.pic_front,
+            url: pr.url,
             pics: pr.pics
         });
 
@@ -37,7 +38,7 @@ rewriteData = function(projects, callback) {
 exports.getList = function(req, res) {
     db.Projects.find({}).sort({
         order: 1
-    }).execFind(function(err, projects) {
+    }).exec(function(err, projects) {
         if (err) {
             console.error(err);
         }
@@ -53,7 +54,7 @@ exports.getListByType = function(req, res) {
         type: req.params.type
     }).sort({
         order: 1
-    }).execFind(function(err, projects) {
+    }).exec(function(err, projects) {
         if (err) {
             console.error(err);
         }

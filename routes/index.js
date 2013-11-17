@@ -8,5 +8,6 @@ exports.index = function(req, res){
 };
 
 exports.pages = function(req, res){
-    res.redirect('/#' + req.url.split('/')[1]);
+    req.params.id = '/' + req.params.id || '';
+    res.redirect('/#' + req.url.split('/')[1] + req.params.id);
 };
