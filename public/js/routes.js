@@ -45,7 +45,14 @@ define([
             });
         },
         project: function(id) {
-            var model = null;
+            var model = null, clearProject;
+
+            clearProject = function  () {
+                if (project !== null && typeof project.close !== 'undefined') {
+                    project.close();
+                }
+            };
+
             if (portCollection) {
                 model = portCollection.get(id);
             } else {
@@ -55,12 +62,14 @@ define([
                     collection: portCollection
                 }).onReady = function () {
                     model = portCollection.get(id);
+                    clearProject();
                     project = new Project({
                         model: model
                     });
                 };
             }
             if (model) {
+                clearProject();
                 project = new Project({
                     model: model
                 });

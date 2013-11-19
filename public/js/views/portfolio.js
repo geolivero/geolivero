@@ -63,6 +63,9 @@ define([
         },
         render: function() {
             var self = this;
+            if (self.$el.find('ul.lists').length) {
+                return;
+            }
             this.$el.html(this.template());
 
             this.collection.each(function(Model) {

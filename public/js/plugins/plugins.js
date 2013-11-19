@@ -1,3 +1,31 @@
+define([
+    'zepto',
+    'hammerjs',
+    'jqhammerjs'
+], function() {
+
+
+$.fn.slideFolded = function (options) {
+    settings = $.extend({
+        clName: ''
+    }, options );
+
+    this.each(function () {
+        var el = $(this), paperHtml = '';
+
+        el.wrap('<div class="slideFolded"></div>');
+
+        paperHtml = el.closest('.slideFolded').html();
+        el.append(paperHtml);
+        el.find(settings.clName).append(paperHtml);
+        el.find(settings.clName + ' ' + settings.clName + ' ' + settings.clName).append(paperHtml);
+        el.closest('.slideFolded').find(settings.clName).each(function (i) {
+            $(this).addClass('fold_' + (i + 1));
+        });
+        //el.append(el);
+    });
+};
+
 $.fn.etalage = function (options) {
     var eta = {}, settings;
     
@@ -77,6 +105,17 @@ $.fn.etalage = function (options) {
             eta.slideTo();
         });
 
+        eta.el.hammer().on('swiperight', function () {
+            eta.counter = eta.counter < 1 ? eta.total - 1 : eta.counter - 1;
+            arrows();
+            eta.slideTo();
+        });
+        eta.el.hammer().on('swipeleft', function () {
+            eta.counter = eta.counter > eta.total - 2 ? 0 : eta.counter + 1;
+            arrows();
+            eta.slideTo();
+        });
+
         eta.parentEl.find('.eta_navigation li').click(function () {
             eta.counter = $(this).index();
             arrows();
@@ -107,3 +146,5 @@ $.fn.etalage = function (options) {
 
     return this.each(eta.init);
 };
+
+});

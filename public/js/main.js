@@ -19,7 +19,8 @@ require({
         plugins: {
             deps: [
                 'zepto',
-                'hammerjs'
+                'hammerjs',
+                'jqhammerjs'
             ],
             exports: 'Plugins'
         },
@@ -34,12 +35,22 @@ require({
                 'zepto'
             ],
             exports: 'Plugins'
+        },
+        hammerjs: {
+            exports: 'HammerJs'
+        },
+        jqhammerjs: {
+            deps: [
+                'hammerjs'
+            ],
+            exports: 'jqHammerJs'
         }
     },
     paths: {
         zepto: '../bower_components/zepto/zepto',
         backbone: '../bower_components/backbone/backbone',
         hammerjs: '../bower_components/hammerjs/dist/hammer',
+        jqhammerjs: '../bower_components/jquery-hammerjs/jqueryhammer',
         handlebars: '../bower_components/handlebars/handlebars',
         underscore: '../bower_components/underscore/underscore',
         geo: 'plugins/geo',

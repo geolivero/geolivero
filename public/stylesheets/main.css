@@ -1338,67 +1338,109 @@ div.project {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 15%;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateX(85%);
+  -moz-transform: translateX(85%);
+  -ms-transform: translateX(85%);
+  -o-transform: translateX(85%);
+  transform: translateX(85%);
 }
-/* line 77, ../sass/portfolio.scss */
+/* line 78, ../sass/portfolio.scss */
+div.project.show {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+/* line 83, ../sass/portfolio.scss */
 div.project div.shifLeft {
   position: absolute;
   left: 0;
   top: 0;
   width: 15%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background: black;
   bottom: 0;
+  cursor: pointer;
 }
-/* line 82, ../sass/portfolio.scss */
-div.project div.shifLeft a {
+/* line 88, ../sass/portfolio.scss */
+div.project div.shifLeft span {
   font-family: 'icomoon', sans-serif;
   color: white;
   display: block;
   font-size: 40px;
   text-decoration: none;
+  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 20%;
   margin-top: -20px;
   padding-left: 30px;
 }
-/* line 87, ../sass/portfolio.scss */
-div.project div.shifLeft a:before {
+/* line 93, ../sass/portfolio.scss */
+div.project div.shifLeft span:before {
   content: "<";
   position: absolute;
   left: -10px;
   top: 0px;
   display: block;
 }
-/* line 93, ../sass/portfolio.scss */
+/* line 99, ../sass/portfolio.scss */
 div.project div.colls {
   overflow: hidden;
   min-height: 100%;
   height: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 95, ../sass/portfolio.scss */
+/* line 103, ../sass/portfolio.scss */
 div.project div.colls div.coll {
-  float: left;
+  position: absolute;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px;
   height: 100%;
-  position: relative;
   bottom: 0;
   overflow: auto;
   text-align: center;
+  top: 0;
 }
-/* line 99, ../sass/portfolio.scss */
+/* line 108, ../sass/portfolio.scss */
+div.project div.colls div.coll h2, div.project div.colls div.coll p, div.project div.colls div.coll a.btn, div.project div.colls div.coll ul.apps {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 111, ../sass/portfolio.scss */
 div.project div.colls div.coll h2 {
   font-size: 200%;
   width: 80%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateY(-80px);
+  -moz-transform: translateY(-80px);
+  -ms-transform: translateY(-80px);
+  -o-transform: translateY(-80px);
+  transform: translateY(-80px);
 }
-/* line 101, ../sass/portfolio.scss */
+/* line 115, ../sass/portfolio.scss */
 div.project div.colls div.coll h2 span {
   width: 100%;
 }
-/* line 104, ../sass/portfolio.scss */
+/* line 118, ../sass/portfolio.scss */
 div.project div.colls div.coll h2 em {
   font-style: normal;
   overflow: hidden;
@@ -1412,35 +1454,64 @@ div.project div.colls div.coll h2 em {
   text-align: center;
   width: 100%;
 }
-/* line 114, ../sass/portfolio.scss */
+/* line 128, ../sass/portfolio.scss */
 div.project div.colls div.coll p {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateY(-40px);
+  -moz-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  -o-transform: translateY(-40px);
+  transform: translateY(-40px);
   font-size: 90%;
   text-align: left;
 }
-/* line 117, ../sass/portfolio.scss */
+/* line 133, ../sass/portfolio.scss */
 div.project div.colls div.coll.info {
-  width: 40%;
+  width: 35%;
+  left: 15%;
   background: rgba(0, 0, 0, 0.4);
   min-height: 100%;
 }
-/* line 122, ../sass/portfolio.scss */
+/* line 138, ../sass/portfolio.scss */
 div.project div.colls div.coll.app {
-  width: 60%;
+  width: 50%;
   padding: 0;
+  left: 50%;
 }
-/* line 125, ../sass/portfolio.scss */
+/* line 141, ../sass/portfolio.scss */
 div.project div.colls div.coll a.btn {
   display: inline-block;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateY(40px);
+  -moz-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  -o-transform: translateY(40px);
+  transform: translateY(40px);
 }
-/* line 128, ../sass/portfolio.scss */
+/* line 146, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.apps {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateY(-40px);
+  -moz-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  -o-transform: translateY(-40px);
+  transform: translateY(-40px);
   height: auto;
   position: static;
   padding-bottom: 20px;
   text-align: center;
   padding-top: 20px;
 }
-/* line 131, ../sass/portfolio.scss */
+/* line 151, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.apps li {
   width: auto;
   height: auto;
@@ -1462,7 +1533,7 @@ div.project div.colls div.coll ul.apps li {
   overflow: visible;
   z-index: 10;
 }
-/* line 140, ../sass/portfolio.scss */
+/* line 160, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.apps li:before {
   content: 'W';
   font-family: 'icomoon', sans-serif;
@@ -1470,27 +1541,27 @@ div.project div.colls div.coll ul.apps li:before {
   font-weight: 200;
   display: block;
 }
-/* line 145, ../sass/portfolio.scss */
+/* line 165, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.apps li.design:before {
   content: 'D';
 }
-/* line 150, ../sass/portfolio.scss */
+/* line 170, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.apps li.website:before {
   content: 'W';
 }
-/* line 155, ../sass/portfolio.scss */
+/* line 175, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.apps li.tablet:before {
   content: '(';
 }
-/* line 160, ../sass/portfolio.scss */
+/* line 180, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.apps li.mobile:before {
   content: ')';
 }
-/* line 165, ../sass/portfolio.scss */
+/* line 185, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.apps li.retouching:before {
   content: '*';
 }
-/* line 169, ../sass/portfolio.scss */
+/* line 189, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.apps li span {
   display: none;
   position: absolute;
@@ -1506,11 +1577,11 @@ div.project div.colls div.coll ul.apps li span {
   font-size: 80%;
   z-index: 20;
 }
-/* line 178, ../sass/portfolio.scss */
+/* line 198, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.apps li:hover span {
   display: inline-block;
 }
-/* line 186, ../sass/portfolio.scss */
+/* line 206, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.projects {
   width: 100%;
   padding: 0;
@@ -1518,7 +1589,7 @@ div.project div.colls div.coll ul.projects {
   height: 100%;
   position: relative;
 }
-/* line 190, ../sass/portfolio.scss */
+/* line 210, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.projects li {
   width: 0;
   padding: 5% 0;
@@ -1536,7 +1607,7 @@ div.project div.colls div.coll ul.projects li {
   transition: all 0.5s ease;
   text-align: center;
 }
-/* line 196, ../sass/portfolio.scss */
+/* line 216, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.projects li.show {
   width: 100%;
   height: 100%;
@@ -1546,19 +1617,19 @@ div.project div.colls div.coll ul.projects li.show {
   -o-border-radius: 0;
   border-radius: 0;
 }
-/* line 200, ../sass/portfolio.scss */
+/* line 220, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.projects li span {
   display: inline-block;
   position: relative;
 }
-/* line 202, ../sass/portfolio.scss */
+/* line 222, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.projects li span img {
   width: 275px;
   height: auto;
   position: relative;
   top: 77px;
 }
-/* line 206, ../sass/portfolio.scss */
+/* line 226, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.projects li span:after {
   color: black;
   content: "I";
@@ -1571,12 +1642,12 @@ div.project div.colls div.coll ul.projects li span:after {
   text-align: left;
   text-indent: -19px;
 }
-/* line 215, ../sass/portfolio.scss */
+/* line 235, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.projects li.type_600 span {
   display: inline-block;
   position: relative;
 }
-/* line 217, ../sass/portfolio.scss */
+/* line 237, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.projects li.type_600 span img {
   width: 522px;
   height: auto;
@@ -1584,7 +1655,7 @@ div.project div.colls div.coll ul.projects li.type_600 span img {
   top: 55px;
   left: 0;
 }
-/* line 222, ../sass/portfolio.scss */
+/* line 242, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.projects li.type_600 span:after {
   color: black;
   content: "T";
@@ -1597,19 +1668,19 @@ div.project div.colls div.coll ul.projects li.type_600 span:after {
   text-align: left;
   text-indent: -88px;
 }
-/* line 233, ../sass/portfolio.scss */
+/* line 253, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.projects li.type_550 span {
   display: inline-block;
   position: relative;
 }
-/* line 235, ../sass/portfolio.scss */
+/* line 255, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.projects li.type_550 span img {
   width: 500px;
   height: auto;
   position: relative;
   top: 43px;
 }
-/* line 239, ../sass/portfolio.scss */
+/* line 259, ../sass/portfolio.scss */
 div.project div.colls div.coll ul.projects li.type_550 span:after {
   color: white;
   content: "@";
@@ -1623,56 +1694,66 @@ div.project div.colls div.coll ul.projects li.type_550 span:after {
   text-indent: -10px;
 }
 @media screen and (max-width: 768px) {
-  /* line 247, ../sass/portfolio.scss */
+  /* line 267, ../sass/portfolio.scss */
   div.project div.colls div.coll ul.projects li.type_550 span img {
     width: 380px;
     top: 33px;
   }
-  /* line 250, ../sass/portfolio.scss */
+  /* line 270, ../sass/portfolio.scss */
   div.project div.colls div.coll ul.projects li.type_550 span:after {
     font-size: 277px;
     text-indent: -5px;
   }
 }
 @media screen and (min-width: 1295px) {
-  /* line 256, ../sass/portfolio.scss */
+  /* line 276, ../sass/portfolio.scss */
   div.project div.colls div.coll ul.projects li.type_550 span img {
     width: 658px;
     top: 55px;
   }
-  /* line 259, ../sass/portfolio.scss */
+  /* line 279, ../sass/portfolio.scss */
   div.project div.colls div.coll ul.projects li.type_550 span:after {
     font-size: 481px;
     text-indent: -11px;
   }
 }
+/* line 295, ../sass/portfolio.scss */
+div.project.show div.colls div.coll h2, div.project.show div.colls div.coll p, div.project.show div.colls div.coll a.btn, div.project.show div.colls div.coll ul.apps {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
 
-/* line 274, ../sass/portfolio.scss */
+/* line 305, ../sass/portfolio.scss */
 div.eta_navigation {
   position: absolute;
   left: 0;
   bottom: 0px;
   height: 20px;
   width: 100%;
-  background: white;
+  background: rgba(0, 0, 0, 0.5);
   height: 30px;
-  border: solid 1px #999999;
+  border: solid 1px black;
   border-left: none;
   border-right: none;
 }
-/* line 279, ../sass/portfolio.scss */
+/* line 310, ../sass/portfolio.scss */
 div.eta_navigation ol {
   margin: 0;
   padding: 0;
   padding-top: 5px;
   text-align: center;
 }
-/* line 282, ../sass/portfolio.scss */
+/* line 313, ../sass/portfolio.scss */
 div.eta_navigation ol li {
   display: inline-block;
   height: 20px;
   width: 20px;
-  background: none;
+  background: white;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
@@ -1682,25 +1763,25 @@ div.eta_navigation ol li {
   margin: 0 2px;
   text-indent: -9999px;
   padding: 0;
-  border: solid 1px black;
+  border: solid 1px white;
   cursor: pointer;
 }
-/* line 288, ../sass/portfolio.scss */
+/* line 319, ../sass/portfolio.scss */
 div.eta_navigation ol li.current {
   background: black;
 }
 
-/* line 295, ../sass/portfolio.scss */
+/* line 326, ../sass/portfolio.scss */
 span.eta_nav {
   position: absolute;
   left: 10px;
   bottom: 5px;
   font-family: 'icomoon', sans-serif;
-  color: black;
+  color: white;
   font-size: 20px;
   cursor: pointer;
 }
-/* line 299, ../sass/portfolio.scss */
+/* line 330, ../sass/portfolio.scss */
 span.eta_nav.right {
   right: 10px;
   left: auto;
