@@ -4,7 +4,7 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Frontend developer and Multimedia designer : Gerald Olivero' });
+  res.render('index', { title: 'Frontend developer and Multimedia designer in regio Rotterdam : Gerald Olivero' });
 };
 
 exports.pages = function(req, res){
