@@ -23,15 +23,14 @@ define([
             e.preventDefault();
             this.showProjects();
         },
+        closeView: function () {
+            this.$el.find('.project').removeClass('show');
+        },
         showProjects: function (e) {
             e.stopPropagation();
             e.preventDefault();
-
-            if (this.$el.find('.project').hasClass('show')) {
-                this.$el.find('.project').removeClass('show');
-            } else {
-                this.$el.find('.project').addClass('show');
-            }
+            Settings.snds.remove.play();
+            this.$el.find('.project').removeClass('show');
         },
         render: function () {
             var html = this.template({ model: this.model.toJSON(), 
@@ -39,7 +38,9 @@ define([
                 self = this;
             
             this.$el.append(html);
-            this.$el.find('ul.projects').etalage();
+            this.$el.find('ul.projects').etalage({
+                snd: Settings.snds.click
+            });
             setTimeout(function () {
                 self.$el.find('.project').addClass('show');
             }, 300);

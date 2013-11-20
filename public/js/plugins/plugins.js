@@ -31,6 +31,7 @@ $.fn.etalage = function (options) {
     
     settings = $.extend({
         time: 5,
+        snd: false,
         navigation: true,
         arrows: true
     }, options );
@@ -71,6 +72,7 @@ $.fn.etalage = function (options) {
         eta.list.eq(eta.oldCounter).removeClass('show');
         eta.list.eq(eta.counter).addClass('show');
         eta.oldCounter = eta.counter;
+        settings.snd.play();
     };
 
     eta.controllers = function () {
@@ -92,6 +94,7 @@ $.fn.etalage = function (options) {
             }
             arrows();
             eta.slideTo();
+
         });
 
         $(document).keyup(function (e) {
@@ -101,8 +104,11 @@ $.fn.etalage = function (options) {
             if (e.keyCode === 39) {
                 eta.counter = eta.counter > eta.total - 2 ? 0 : eta.counter + 1;
             }
-            arrows();
-            eta.slideTo();
+            if (e.keyCode === 39 || e.keyCode === 37) {
+                arrows();
+                eta.slideTo();
+            }
+            
         });
 
         eta.el.hammer().on('swiperight', function () {

@@ -74,7 +74,7 @@ div.project {
     bottom: 60px; @include box-sizing(border-box);
     @include box-shadow(0 0 40px rgba($black, 0.8));
     @include transition(all 0.5s ease);
-    @include transform(translateX(85%));
+    @include transform(translateX(100%));
     &.show {
         @include transform(translateX(0));
     }
@@ -320,6 +320,18 @@ div.eta_navigation {
                 background: $black;
             }
         }
+    }
+}
+div.loader {
+    position: absolute; left: 0; top: 0;
+    height: 100%; background: $black; width: 5%;  bottom: 0;
+    @include box-sizing(border-box); padding: 10px; overflow: hidden;
+    text-align: right; @include transition(all 0.4s);
+    span {
+        color: $white; @include geared; font-size: 300%;
+    }
+    &.remove {
+        height: 0; padding: 0; @include opacity(0);
     }
 }
 

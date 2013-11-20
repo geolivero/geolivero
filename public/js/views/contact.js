@@ -14,6 +14,16 @@ define([
         initialize: function (){
             this.render();
         },
+        closeView: function (callback) {
+            var self = this;
+            setTimeout(function () {
+                self.$el.find('.innerContent').removeClass('show');    
+            }, 100); 
+            setTimeout(function () {
+                self.$el.find('.phone').removeClass('show');
+                callback();    
+            }, 1000); 
+        },
         render: function () {
             var self = this;
             this.$el.html(this.template);

@@ -12,7 +12,7 @@ html
         nav
             ul
                 li
-                    a(href="/skills") my skills
+                    a(href="/") about
                 li
                     a(href="/portfolio") my projects
                 li
@@ -20,5 +20,29 @@ html
 
         a.logo(href="/") L
         a.sound(href="#sound") Sound of
+
+    audio(id="snd_bg_1")
+        source(src="/snds/AJazzHoliday.mp3", type="audio/mpeg", preload)
+        source(src="/snds/AJazzHoliday.ogg", type="audio/ogg", preload)
+    audio(id="snd_bg_2")
+        source(src="/snds/background-orchestra.mp3", type="audio/mpeg", preload)
+        source(src="/snds/background-orchestra.ogg", type="audio/ogg", preload)
+    audio(id="snd_click")
+        source(src="/snds/small_clicker.mp3", type="audio/mpeg", preload)
+        source(src="/snds/small_clicker.ogg", type="audio/ogg", preload)  
+    audio(id="snd_hover")
+        source(src="/snds/hover.mp3", type="audio/mpeg", preload)
+        source(src="/snds/hover.ogg", type="audio/ogg", preload)
+    audio(id="snd_gone")
+        source(src="/snds/daclick.mp3", type="audio/mpeg", preload)
+        source(src="/snds/daclick.ogg", type="audio/ogg", preload)
+
+
+
+    //if lt IE 9
+        div.oldBrowser
+            p Oops you are using an old browser, download the latest version at 
+                a(href="http://browsehappy.com/", target="_blank") browsehappy
+
 
     script(type="text/javascript", data-main="/js/main", src="/bower_components/requirejs/require.js")

@@ -7,6 +7,11 @@ define(function() {
         },
         getProjectImagePath: function (img) {
             return '/assets/projects/' + img;
+        },
+        snds: {
+            click: document.getElementById('snd_click'),
+            hover: document.getElementById('snd_hover'),
+            remove: document.getElementById('snd_gone')
         }
     }
 });

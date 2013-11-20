@@ -1,19 +1,11 @@
 /*
 Syntax error: Undefined variable: "$innerWidth".
-        on line 4 of sass/home.scss
+        on line 4 of /Users/contact/Sites/projecten/_geolivero/geolivero/geolivero/public/sass/home.scss
 
-1: $slideHeight: 500px;
-2: 
-3: div.center.slide {
-4:     position: absolute; left: 50%; margin-left: -($innerWidth / 2);
-5:     top: 0;
-6: }
-7: div.firstSlide, div.secondSlide, div.thirdSlide {
-8:     width: $innerWidth; z-index: 2;
-9: 
+1: /Users/contact/Sites/projecten/_geolivero/geolivero/geolivero/public/sass/home.scss
 
 Backtrace:
-sass/home.scss:4
+/Users/contact/Sites/projecten/_geolivero/geolivero/geolivero/public/sass/home.scss:4
 /Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/script/variable.rb:49:in `_perform'
 /Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/script/node.rb:50:in `perform'
 /Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/script/operation.rb:76:in `_perform'
@@ -45,23 +37,51 @@ sass/home.scss:4
 /Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/tree/visitors/perform.rb:7:in `visit'
 /Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/engine.rb:351:in `_render_with_sourcemap'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/engine.rb:282:in `render_with_sourcemap'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/plugin/compiler.rb:307:in `update_stylesheet'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/plugin/compiler.rb:182:in `block in update_stylesheets'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/plugin/compiler.rb:179:in `each'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/plugin/compiler.rb:179:in `update_stylesheets'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/plugin/compiler.rb:262:in `block in watch'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `call'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `on_change'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/listen-0.7.3/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `call'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `report_changes'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/listen-0.7.3/lib/listen/adapter.rb:210:in `poll_changed_dirs'
-/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `block in start'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/tree/root_node.rb:20:in `render'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.0.alpha.149/lib/sass/engine.rb:265:in `render'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:30:in `block in temporary_multipath_handler'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:27:in `each'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:27:in `temporary_multipath_handler'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:17:in `block (2 levels) in run'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:16:in `each'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:16:in `block in run'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/rb-fsevent-0.9.3/lib/rb-fsevent/fsevent.rb:43:in `call'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/rb-fsevent-0.9.3/lib/rb-fsevent/fsevent.rb:43:in `run'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:20:in `run'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:44:in `call'
+/Users/contact/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+/Users/contact/.rvm/rubies/ruby-2.0.0-p247/bin/compass:23:in `load'
+/Users/contact/.rvm/rubies/ruby-2.0.0-p247/bin/compass:23:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$innerWidth\".\A         on line 4 of sass/home.scss\A \A 1: $slideHeight: 500px;\A 2: \A 3: div.center.slide {\A 4:     position: absolute; left: 50%; margin-left: -($innerWidth / 2);\A 5:     top: 0;\A 6: }\A 7: div.firstSlide, div.secondSlide, div.thirdSlide {\A 8:     width: $innerWidth; z-index: 2;\A 9: "; }
+  content: "Syntax error: Undefined variable: \"$innerWidth\".\A         on line 4 of /Users/contact/Sites/projecten/_geolivero/geolivero/geolivero/public/sass/home.scss\A \A 1: /Users/contact/Sites/projecten/_geolivero/geolivero/geolivero/public/sass/home.scss"; }

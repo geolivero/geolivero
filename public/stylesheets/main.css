@@ -486,6 +486,11 @@ body.webApp a.btn:hover span.wrap span.back {
 /* line 2, ../sass/template.scss */
 body.webApp {
   background: url(../../images/wood_tiler.jpg) left top;
+  padding: 0;
+  margin: 0;
+}
+/* line 5, ../sass/template.scss */
+body.webApp.sndOn {
   animation-duration: 50s;
   -webkit-animation-duration: 50s;
   -webkit-animation-name: movingBackground;
@@ -503,10 +508,8 @@ body.webApp {
   -ms-animation-timing-function: linear;
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
-  padding: 0;
-  margin: 0;
 }
-/* line 7, ../sass/template.scss */
+/* line 9, ../sass/template.scss */
 body.webApp footer {
   position: fixed;
   bottom: 0;
@@ -516,13 +519,13 @@ body.webApp footer {
   background: white;
   width: 100%;
 }
-/* line 10, ../sass/template.scss */
+/* line 12, ../sass/template.scss */
 body.webApp footer a {
   text-decoration: none;
   display: inline-block;
   color: black;
 }
-/* line 13, ../sass/template.scss */
+/* line 15, ../sass/template.scss */
 body.webApp footer a.logo {
   font-family: 'icomoon', sans-serif;
   height: 60px;
@@ -533,7 +536,7 @@ body.webApp footer a.logo {
   border-right: solid 1px #cccccc;
   position: relative;
 }
-/* line 17, ../sass/template.scss */
+/* line 19, ../sass/template.scss */
 body.webApp footer a.logo:after {
   content: '';
   display: block;
@@ -549,7 +552,7 @@ body.webApp footer a.logo:after {
   -o-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 23, ../sass/template.scss */
+/* line 25, ../sass/template.scss */
 body.webApp footer a.sound {
   height: 60px;
   line-height: 60px;
@@ -557,7 +560,7 @@ body.webApp footer a.sound {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 28, ../sass/template.scss */
+/* line 30, ../sass/template.scss */
 body.webApp footer a.logo, body.webApp footer a.sound {
   float: left;
   -webkit-transition: All 0.3s;
@@ -565,12 +568,12 @@ body.webApp footer a.logo, body.webApp footer a.sound {
   -o-transition: All 0.3s;
   transition: All 0.3s;
 }
-/* line 33, ../sass/template.scss */
+/* line 35, ../sass/template.scss */
 body.webApp footer a.logo:hover, body.webApp footer a.sound:hover {
   background: black;
   color: white;
 }
-/* line 38, ../sass/template.scss */
+/* line 40, ../sass/template.scss */
 body.webApp footer nav {
   position: absolute;
   right: 0;
@@ -578,16 +581,16 @@ body.webApp footer nav {
   text-align: right;
   background: black;
 }
-/* line 41, ../sass/template.scss */
+/* line 43, ../sass/template.scss */
 body.webApp footer nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 44, ../sass/template.scss */
+/* line 46, ../sass/template.scss */
 body.webApp footer nav li {
   display: inline-block;
 }
-/* line 46, ../sass/template.scss */
+/* line 48, ../sass/template.scss */
 body.webApp footer nav li a {
   height: 60px;
   line-height: 60px;
@@ -608,7 +611,7 @@ body.webApp footer nav li a {
   -o-transform: translateY(0px);
   transform: translateY(0px);
 }
-/* line 52, ../sass/template.scss */
+/* line 54, ../sass/template.scss */
 body.webApp footer nav li a:hover {
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
@@ -616,6 +619,37 @@ body.webApp footer nav li a:hover {
   -o-transform: translateY(10px);
   transform: translateY(10px);
   background: white;
+}
+/* line 62, ../sass/template.scss */
+body.webApp div.oldBrowser {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+/* line 65, ../sass/template.scss */
+body.webApp div.oldBrowser:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+/* line 70, ../sass/template.scss */
+body.webApp div.oldBrowser p {
+  width: 300px;
+  padding: 20px;
+  background: white;
+  color: black;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  margin-left: -150px;
+  z-index: 100;
 }
 
 /* line 3, ../sass/home.scss */
@@ -660,20 +694,24 @@ div.firstSlide div.me, div.secondSlide div.me, div.thirdSlide div.me {
   -ms-transform-origin: 0 bottom 0 50%;
   -o-transform-origin: 0 bottom 0 50%;
   transform-origin: 0 bottom 0 50%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
 }
-/* line 18, ../sass/home.scss */
+/* line 19, ../sass/home.scss */
 div.firstSlide.show, div.secondSlide.show, div.thirdSlide.show {
   z-index: 10;
 }
-/* line 20, ../sass/home.scss */
+/* line 21, ../sass/home.scss */
 div.firstSlide.show div.me, div.secondSlide.show div.me, div.thirdSlide.show div.me {
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
   -ms-transform: rotateX(0deg);
   -o-transform: rotateX(0deg);
   transform: rotateX(0deg);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }
-/* line 23, ../sass/home.scss */
+/* line 25, ../sass/home.scss */
 div.firstSlide.show div.leftBlock, div.firstSlide.show div.rightBlock, div.secondSlide.show div.leftBlock, div.secondSlide.show div.rightBlock, div.thirdSlide.show div.leftBlock, div.thirdSlide.show div.rightBlock {
   width: 300px;
   -webkit-border-radius: 0;
@@ -683,11 +721,11 @@ div.firstSlide.show div.leftBlock, div.firstSlide.show div.rightBlock, div.secon
   border-radius: 0;
   height: auto;
 }
-/* line 27, ../sass/home.scss */
+/* line 29, ../sass/home.scss */
 div.firstSlide.show div.rightBlock, div.secondSlide.show div.rightBlock, div.thirdSlide.show div.rightBlock {
   width: 400px;
 }
-/* line 31, ../sass/home.scss */
+/* line 33, ../sass/home.scss */
 div.firstSlide div.leftBlock, div.firstSlide div.rightBlock, div.secondSlide div.leftBlock, div.secondSlide div.rightBlock, div.thirdSlide div.leftBlock, div.thirdSlide div.rightBlock {
   -webkit-transition: All, 1s ease;
   -moz-transition: All, 1s ease;
@@ -703,7 +741,7 @@ div.firstSlide div.leftBlock, div.firstSlide div.rightBlock, div.secondSlide div
   padding-top: 10px;
 }
 
-/* line 37, ../sass/home.scss */
+/* line 39, ../sass/home.scss */
 div.firstSlide {
   position: absolute;
   height: 500px;
@@ -714,12 +752,12 @@ div.firstSlide {
   -o-perspective: 1500px;
   perspective: 1500px;
 }
-/* line 43, ../sass/home.scss */
+/* line 45, ../sass/home.scss */
 div.firstSlide p {
   text-align: center;
   font-size: 140%;
 }
-/* line 48, ../sass/home.scss */
+/* line 50, ../sass/home.scss */
 div.firstSlide div.leftBlock {
   position: absolute;
   left: 0;
@@ -728,11 +766,11 @@ div.firstSlide div.leftBlock {
   z-index: 2;
   width: 0;
 }
-/* line 52, ../sass/home.scss */
+/* line 54, ../sass/home.scss */
 div.firstSlide div.leftBlock div.inner {
   width: 300px;
 }
-/* line 56, ../sass/home.scss */
+/* line 58, ../sass/home.scss */
 div.firstSlide div.rightBlock {
   position: absolute;
   left: 600px;
@@ -740,28 +778,30 @@ div.firstSlide div.rightBlock {
   width: 0;
   z-index: 2;
 }
-/* line 59, ../sass/home.scss */
+/* line 61, ../sass/home.scss */
 div.firstSlide div.rightBlock div.inner {
   width: 400px;
 }
-/* line 63, ../sass/home.scss */
+/* line 65, ../sass/home.scss */
 div.firstSlide div.rightBlock div.btnWrap {
   text-align: right;
   padding-right: 40px;
 }
-/* line 68, ../sass/home.scss */
+/* line 70, ../sass/home.scss */
 div.firstSlide div.rightBlock {
   padding-top: 40px;
 }
-/* line 73, ../sass/home.scss */
+/* line 75, ../sass/home.scss */
 div.firstSlide.show div.me {
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
   -ms-transform: rotateX(0deg);
   -o-transform: rotateX(0deg);
   transform: rotateX(0deg);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }
-/* line 76, ../sass/home.scss */
+/* line 79, ../sass/home.scss */
 div.firstSlide.show div.leftBlock, div.firstSlide.show div.rightBlock {
   width: 300px;
   -webkit-border-radius: 0;
@@ -771,23 +811,23 @@ div.firstSlide.show div.leftBlock, div.firstSlide.show div.rightBlock {
   border-radius: 0;
   height: auto;
 }
-/* line 80, ../sass/home.scss */
+/* line 83, ../sass/home.scss */
 div.firstSlide.show div.rightBlock {
   width: 400px;
 }
-/* line 82, ../sass/home.scss */
+/* line 85, ../sass/home.scss */
 div.firstSlide.show div.rightBlock div.inner {
   width: 400px;
 }
 
-/* line 89, ../sass/home.scss */
+/* line 92, ../sass/home.scss */
 div.secondSlide, div.thirdSlide {
   top: -540px;
   position: absolute;
   height: 500px;
   overflow: visible;
 }
-/* line 91, ../sass/home.scss */
+/* line 94, ../sass/home.scss */
 div.secondSlide div.me, div.thirdSlide div.me {
   background: url(../../images/me.png) -902px 0px no-repeat;
   display: inline-block;
@@ -802,21 +842,23 @@ div.secondSlide div.me, div.thirdSlide div.me {
   -ms-transform: rotateX(90deg);
   -o-transform: rotateX(90deg);
   transform: rotateX(90deg);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
 }
 
-/* line 97, ../sass/home.scss */
+/* line 101, ../sass/home.scss */
 div.secondSlide div.leftBlock {
   position: absolute;
   left: 0;
   top: 20px;
   width: 0;
 }
-/* line 99, ../sass/home.scss */
+/* line 103, ../sass/home.scss */
 div.secondSlide div.leftBlock div.inner {
   width: 380px;
   padding-right: 40px;
 }
-/* line 103, ../sass/home.scss */
+/* line 107, ../sass/home.scss */
 div.secondSlide div.leftBlock div.skills ul {
   background: url(../images/fonts/projects.svg) no-repeat 0 0;
   -webkit-background-size: 100%;
@@ -828,101 +870,101 @@ div.secondSlide div.leftBlock div.skills ul {
   padding: 0;
   margin: 0;
 }
-/* line 107, ../sass/home.scss */
+/* line 111, ../sass/home.scss */
 div.secondSlide div.leftBlock div.skills ul li {
   display: none;
 }
-/* line 116, ../sass/home.scss */
+/* line 120, ../sass/home.scss */
 div.secondSlide div.rightBlock {
   position: absolute;
   left: 600px;
   top: 30px;
   z-index: 14;
 }
-/* line 118, ../sass/home.scss */
+/* line 122, ../sass/home.scss */
 div.secondSlide div.rightBlock div.inner {
   width: 400px;
   padding-right: 10px;
 }
-/* line 121, ../sass/home.scss */
+/* line 125, ../sass/home.scss */
 div.secondSlide div.rightBlock p, div.secondSlide div.rightBlock h4 {
   text-align: center;
 }
-/* line 124, ../sass/home.scss */
+/* line 128, ../sass/home.scss */
 div.secondSlide div.rightBlock h4 {
   font-size: 210%;
 }
-/* line 128, ../sass/home.scss */
+/* line 132, ../sass/home.scss */
 div.secondSlide div.btnWrap {
   text-align: center;
 }
-/* line 132, ../sass/home.scss */
+/* line 136, ../sass/home.scss */
 div.secondSlide.show {
   z-index: 13;
 }
-/* line 134, ../sass/home.scss */
+/* line 138, ../sass/home.scss */
 div.secondSlide.show div.leftBlock, div.secondSlide.show div.rightBlock {
   width: 380px;
 }
-/* line 137, ../sass/home.scss */
+/* line 141, ../sass/home.scss */
 div.secondSlide.show div.rightBlock {
   width: 400px;
 }
 
-/* line 145, ../sass/home.scss */
+/* line 149, ../sass/home.scss */
 div.thirdSlide div.leftBlock {
   position: absolute;
   left: 0;
   top: 20px;
   width: 0;
 }
-/* line 147, ../sass/home.scss */
+/* line 151, ../sass/home.scss */
 div.thirdSlide div.leftBlock div.inner {
   width: 650px;
 }
-/* line 150, ../sass/home.scss */
+/* line 154, ../sass/home.scss */
 div.thirdSlide div.leftBlock div.inner p {
   width: 350px;
   font-size: 120%;
 }
-/* line 153, ../sass/home.scss */
+/* line 157, ../sass/home.scss */
 div.thirdSlide div.leftBlock div.inner h4 {
   font-size: 220%;
   width: 300px;
 }
-/* line 161, ../sass/home.scss */
+/* line 165, ../sass/home.scss */
 div.thirdSlide div.rightBlock {
   position: absolute;
   left: 650px;
   top: 250px;
   z-index: 14;
 }
-/* line 163, ../sass/home.scss */
+/* line 167, ../sass/home.scss */
 div.thirdSlide div.rightBlock div.inner {
   width: 400px;
 }
-/* line 166, ../sass/home.scss */
+/* line 170, ../sass/home.scss */
 div.thirdSlide div.rightBlock p, div.thirdSlide div.rightBlock h4 {
   text-align: center;
 }
-/* line 169, ../sass/home.scss */
+/* line 173, ../sass/home.scss */
 div.thirdSlide div.rightBlock h4 {
   font-size: 210%;
 }
-/* line 174, ../sass/home.scss */
+/* line 178, ../sass/home.scss */
 div.thirdSlide.show {
   z-index: 13;
 }
-/* line 176, ../sass/home.scss */
+/* line 180, ../sass/home.scss */
 div.thirdSlide.show div.leftBlock, div.thirdSlide.show div.rightBlock {
   width: 650px;
 }
-/* line 179, ../sass/home.scss */
+/* line 183, ../sass/home.scss */
 div.thirdSlide.show div.rightBlock {
   width: 400px;
 }
 
-/* line 185, ../sass/home.scss */
+/* line 189, ../sass/home.scss */
 div.tool.slides {
   position: absolute;
   background: black;
@@ -932,9 +974,32 @@ div.tool.slides {
   top: 500px;
   bottom: -70px;
   text-align: center;
-  width: 100%;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
 }
-/* line 190, ../sass/home.scss */
+/* line 193, ../sass/home.scss */
+div.tool.slides.show {
+  width: 100%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 198, ../sass/home.scss */
 div.tool.slides a:before {
   content: 'B';
   font-family: 'icomoon', sans-serif;
@@ -1345,11 +1410,11 @@ div.project {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-transform: translateX(85%);
-  -moz-transform: translateX(85%);
-  -ms-transform: translateX(85%);
-  -o-transform: translateX(85%);
-  transform: translateX(85%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
 }
 /* line 78, ../sass/portfolio.scss */
 div.project.show {
@@ -1771,7 +1836,41 @@ div.eta_navigation ol li.current {
   background: black;
 }
 
-/* line 326, ../sass/portfolio.scss */
+/* line 325, ../sass/portfolio.scss */
+div.loader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: black;
+  width: 5%;
+  bottom: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  overflow: hidden;
+  text-align: right;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/* line 330, ../sass/portfolio.scss */
+div.loader span {
+  color: white;
+  font-family: 'geared_slabregular', sans-serif;
+  font-size: 300%;
+}
+/* line 333, ../sass/portfolio.scss */
+div.loader.remove {
+  height: 0;
+  padding: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+/* line 338, ../sass/portfolio.scss */
 span.eta_nav {
   position: absolute;
   left: 10px;
@@ -1781,7 +1880,7 @@ span.eta_nav {
   font-size: 20px;
   cursor: pointer;
 }
-/* line 330, ../sass/portfolio.scss */
+/* line 342, ../sass/portfolio.scss */
 span.eta_nav.right {
   right: 10px;
   left: auto;

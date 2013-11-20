@@ -7,8 +7,9 @@ define([
     'views/portfolio',
     'views/project',
     'model',
+    'settings',
     'collections',
-], function($, _, Backbone, Contact, Home, Portfolio, Project, PortModel, PortCollection) {
+], function($, _, Backbone, Contact, Home, Portfolio, Project, PortModel, Settings, PortCollection) {
     var contact = null,
         home = null,
         portfolio = null,
@@ -25,24 +26,50 @@ define([
             'project/:id': 'project',
             'contact': 'contact'
         },
+        closeViews: function (callback) {
+            if (portfolio !== null) {
+                portfolio.closeView(callback);
+                if(project !== null) {
+                    project.closeView();
+                    project = null;
+                }
+                portfolio = null;
+            } else if(home !== null) {
+                home.closeView(callback);
+                home = null;
+            } else if(contact !== null) {
+                contact.closeView(callback);
+                contact = null;
+            } else {
+                callback();
+            }
+        },
         index: function() {
-            home = new Home();
-            home.open('firstSlide');
+            this.closeViews(function () {
+                home = new Home();
+                home.open('firstSlide');
+            });
+            Settings.snds.click.play();
         },
         skills: function() {
             home = new Home();
             home.open('secondSlide');
+            Settings.snds.click.play();
         },
         iwant: function() {
             home = new Home();
             home.open('thirdSlide');
+            Settings.snds.click.play();
         },
         portfolio: function() {
-            portCollection = new PortCollection();
+            this.closeViews(function () {
+                portCollection = new PortCollection();
 
-            portfolio = new Portfolio({
-                collection: portCollection
+                portfolio = new Portfolio({
+                    collection: portCollection
+                });
             });
+            Settings.snds.click.play();
         },
         project: function(id) {
             var model = null, clearProject;
@@ -53,6 +80,7 @@ define([
                 }
             };
 
+
             if (portCollection) {
                 model = portCollection.get(id);
             } else {
@@ -60,7 +88,8 @@ define([
 
                 portfolio = new Portfolio({
                     collection: portCollection
-                }).onReady = function () {
+                });
+                portfolio.onReady = function () {
                     model = portCollection.get(id);
                     clearProject();
                     project = new Project({
@@ -74,9 +103,13 @@ define([
                     model: model
                 });
             }
+            Settings.snds.click.play();
         },
         contact: function() {
-            contact = new Contact();
+            this.closeViews(function () {
+                contact = new Contact();
+            });
+            Settings.snds.click.play();
         }
     });
 
