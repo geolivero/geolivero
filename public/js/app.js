@@ -15,14 +15,14 @@ define([
         body.addClass('sndOn');
 
         $('footer a.sound').click(function (e) {
-            if ($(this).text().indexOf('Sound of') > -1) {
+            if ($(this).text().indexOf('Sound off') > -1) {
                 bg.pause();
                 body.removeClass('sndOn');
                 $(this).text('Sound on');
             } else {
                 bg.play();
                 body.addClass('sndOn');
-                $(this).text('Sound of');
+                $(this).text('Sound off');
             }
             e.preventDefault();
         });
